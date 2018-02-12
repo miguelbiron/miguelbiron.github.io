@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Finance on The MBLog</title>
+    <link>/tags/finance/</link>
+    <description>Recent content in Finance on The MBLog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018. All rights reserved.</copyright>
+    <lastBuildDate>Fri, 09 Feb 2018 17:40:00 -0300</lastBuildDate>
+    
+	<atom:link href="/tags/finance/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Simplifying payments with linear programming</title>
+      <link>/2018/02/09/simplifying-payments-with-linear-programming/</link>
+      <pubDate>Fri, 09 Feb 2018 17:40:00 -0300</pubDate>
+      
+      <guid>/2018/02/09/simplifying-payments-with-linear-programming/</guid>
+      <description>Imagine you have a group of $n$ friends and that you regularly go out for drinks with them (say, a couple of times a week). At each of these meetings, a different member of the group pays for the bill, but you keep track of who consumed what (by using one of these popular apps, for example). You can expect that, after a month or so, everyone is going to owe everyone some amount of money.</description>
+    </item>
+    
+  </channel>
+</rss>

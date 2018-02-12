@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.36" />
+
+  <title>Simplifying payments with linear programming &middot; The MBLog</title>
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-beta1/katex.min.css" integrity="sha384-VEnyslhHLHiYPca9KFkBB3CMeslnM9CzwjxsEbZTeA21JBm7tdLwKoZmCt3cZTYD" crossorigin="anonymous">
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/">The MBLog</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/miguelbiron" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/miguelbiron" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://stackoverflow.com/users/mbiron" target="_blank"><i class="fa fa-stack-overflow fa-fw"></i>Stack Overflow</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2018. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Simplifying payments with linear programming</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>09 Feb 2018, 17:40</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/finance">finance</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/linear-programming">linear programming</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/r">R</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <p>Imagine you have a group of <code>$n$</code> friends and that you regularly go out for drinks with them (say, a couple of times a week). At each of these meetings, a different member of the group pays for the bill, but you keep track of who consumed what (by using one of these popular <a href="http://www.businessinsider.com/5-apps-that-take-the-pain-out-of-splitting-the-bill-2016-1/#-3">apps</a>, for example). You can expect that, after a month or so, everyone is going to owe everyone some amount of money. Settling these debts will involve a cumbersome sequence of up to <code>$n(n-1)$</code> payments from each member to another. The question which obviously arises is then:</p>
+<blockquote>
+<p>Can we reduce the number of transactions to a minimum while ensuring that everyone gets paid what he or she is owed?</p>
+</blockquote>
+<p>The answer yes, but finding the optimal solution can take you <strong>a lot of time</strong>. As has been noted <a href="https://hackernoon.com/adventures-in-programming-interviews-misleadingly-difficult-np-hard-problem-43092597018c">elsewhere</a>, this seemingly inoffensive problem is actually <strong>NP-hard</strong>. Many people have proposed many different heuristics to approach this problem (see this <a href="https://stackoverflow.com/q/877728/5443023">Stackoverflow question</a>). My problem with these solutions is simply that they are not as elegant as I would like them to be.</p>
+<div id="a-very-brief-intro-to-linear-programming" class="section level2">
+<h2>A very brief intro to linear programming</h2>
+<p>In this post, I am going to show you a completely different approach to solve this problem by using <strong><a href="https://en.wikipedia.org/wiki/Linear_programming">Linear Programming</a></strong>. A standard formulation of an LP is: <code>$$ \begin{aligned} &amp; \min_{x \in \mathbb{R}^N} &amp; &amp; c^Tx \\ &amp; \text{s.t} &amp; &amp; Ax \leq b \\ &amp;&amp;&amp; x \geq 0 \end{aligned} $$</code></p>
+<p>where <code>$c \in \mathbb{R}^N$</code>, <code>$A$</code> is matrix of size <code>$m \times N$</code> and <code>$b \in \mathbb{R}^m$</code> (<code>$\geq$</code> and <code>$\leq$</code> work as elementwise inequalities). LP is a mature technology, with many solvers available under both commercial and open source licenses, that can solve problems involving thousands of variables using a desktop computer in under a minute <span class="citation">(Boyd and Vandenberghe 2004)</span>. In what follows, I will show you how to leverage this technology to solve the problem we are tackling.</p>
+</div>
+<div id="mathematical-formulation-of-the-problem" class="section level2">
+<h2>Mathematical formulation of the problem</h2>
+<p>We will describe the debts within the group by a matrix <code>$D$</code> such that <code>$d_{ij} \geq 0$</code> is the amount of money that the <code>$i$</code>-th member owes to the <code>$j$</code>-th member: <code>$$ D =  \begin{pmatrix} 0 &amp; d_{12} &amp; \dots &amp; d_{1N} \\ d_{21} &amp; 0 &amp; \dots &amp; d_{2N} \\ \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\ d_{N1} &amp; \dots &amp; d_{NN-1}&amp; 0 \end{pmatrix} $$</code></p>
+<p>The diagonal is full of 0’s because nobody owes himself, but other than that, we are assuming that this matrix is very dense, so that <code>$d_{ij} &gt; 0$</code> for most of the <code>$i \neq j$</code> pairs.</p>
+<p>Under this description, our aim is then to find a different matrix <code>$X$</code> that has the least possible number of entries <code>$x_{ij} &gt; 0$</code>, but that satisfies the contraint imposed by the problem. The constraints can be cast as <code>$$ \forall i: \underbrace{\sum_j x_{ji}}_{\text{owed to }i\text{ under }X} - \underbrace{\sum_j x_{ij}}_{\text{owed by }i\text{ under }X} = \underbrace{\sum_j d_{ji}}_{\text{owed to }i\text{ under }D} - \underbrace{\sum_j d_{ij}}_{\text{owed by }i\text{ under }D} $$</code></p>
+<p>We can express this succinctly using linear algebra: <code>$$ (X^T - X)1_n = (D^T - D)1_n $$</code></p>
+<p>Note that the function <code>$f_c(X) = (X^T - X)c$</code> is linear in <code>$X$</code>, <code>$\forall c \in \mathbb{R}^n$</code>, since <code>$\forall \alpha, \beta \in \mathbb{R}$</code>: <code>$$ \begin{aligned} f_c(\alpha X + \beta Y) &amp;= [(\alpha X + \beta Y)^T - (\alpha X + \beta Y)]c \\ &amp;= \alpha(X^T - X)c + \beta(Y^T - Y)c \\ &amp;= \alpha f_c(X) + \beta f_c(Y) \end{aligned} $$</code></p>
+<p>Using the above definitions, we can now formally state our optimization problem <code>$$ \begin{aligned} &amp; \min_{X \in \mathbb{R}^{n\times n}} &amp; &amp; \|X\|_0 \\ &amp; \text{s.t} &amp; &amp; (X^T - X)1_n = b \\ &amp;&amp;&amp; x_{ii} = 0, \forall i \\ &amp;&amp;&amp; x_{ij} \geq 0, \forall i \neq j \end{aligned} $$</code></p>
+<p>where we have defined <code>$r \triangleq (D^T - D)1_n$</code>, to highlight the fact that this is the only way our problem depends on <code>$D$</code>. In other words, we could do the same analysis if someone gave us <code>$b$</code> instead of <code>$D$</code>. Also, <code>$\|X\|_0$</code> is the number of non-zero components in <code>$X$</code>.</p>
+<p>Now, if we wanted to say that this looks like an LP, we would run into two issues:</p>
+<ol style="list-style-type: decimal">
+<li><code>$X$</code> is a matrix, not a vector</li>
+<li><code>$\|\cdot\|_0$</code> is not a linear function (nor differentiable, nor continuous)</li>
+</ol>
+<p>The first issue is actually easier to deal with, so we’ll start with that one.</p>
+</div>
+<div id="thinking-in-terms-of-vectors-instead-of-matrices" class="section level2">
+<h2>Thinking in terms of vectors instead of matrices</h2>
+<p>As you may know from linear algebra courses, the space of matrices with real entries of size <code>$r\times c$</code>, <code>$\mathbb{R}^{r\times c}$</code>, is isomorphic to <code>$\mathbb{R}^{rc}$</code>. One isomorphism is the function: <code>$$ vec: \mathbb{R}^{r\times c} \to \mathbb{R}^{rc} $$</code></p>
+<p>such that <code>$\forall M \in \mathbb{R}^{r\times c}$</code>, <code>$v = vec(M)$</code> is a vector of size <code>$rc$</code> formed by stacking the columns of <code>$M$</code>.</p>
+<p>Given the above, we could therefore work with <code>$x = vec(X)$</code>. Since this is an isomorphism, and the restriction is linear in <code>$X$</code>, we know that: <code>$$ \exists A \in \mathbb{R}^{n\times n^2}: vec(X) = (X^T - X)1_n $$</code></p>
+<p>This is all good, but we could further exploit the structure of the problem in order to make this translation into vectors more efficient. Indeed, recall that we are looking for a matrix with a diagonal of zeroes. Therefore, instead of working with vectors in <code>$\mathbb{R}^{n^2}$</code> and setting up restrictions for enforcing a zero diagonal, we could just remove the diagonal from our vector representation. This way, we reduce the number of degrees of freedom and the number of restrictions.</p>
+<p>Thus, let us define the function <code>$$ vec^*: \mathbb{R}^{n\times n} \to \mathbb{R}^{n(n-1)} $$</code></p>
+<p>such that <code>$v = vec^*(M)$</code> is a vector of size <code>$n(n-1)$</code> where the columns of <code>$M$</code> are stacked on top of one another, but the elements of the diagonal are removed. If we restrict the domain of <code>$vec^*$</code> to the set <code>$$ \mathcal{D}_0 = \{M \in \mathbb{R}^{n\times n}: \text{diag}(M) = 0_n\} $$</code></p>
+<p>then <code>$$ vec^*: \mathcal{D}_0 \to \mathbb{R}^{n(n-1)} $$</code></p>
+<p>is an isomorphism. Hence, <code>$$ \exists A \in \mathbb{R}^{n\times n(n-1)}, \forall X \in \mathcal{D}_0: Avec^*(X) = (X^T - X)1_n $$</code></p>
+<p>Indeed, the matrix <code>$A$</code> can be constructed for any <code>$n \geq 2$</code>. I have built an R package that implements the approach I describe in this blog called <code>minTX</code> and which is available from <a href="https://github.com/miguelbiron/minTX">Github</a>. It also has all the helper functions needed for the matrix &lt;-&gt; vector conversions and for building the constraint matrix. So, let me show you how <code>$A$</code> looks like for <code>$n=3$</code>:</p>
+<pre class="r"><code>library(minTX)
+
+n = 3
+A = get_const_matrix(n)
+A
+##      [,1] [,2] [,3] [,4] [,5] [,6]
+## [1,]    1    1   -1    0   -1    0
+## [2,]   -1    0    1    1    0   -1
+## [3,]    0   -1    0   -1    1    1</code></pre>
+<p>Let’s check that this weird construction works as it should</p>
+<pre class="r"><code># get a random matrix with positive coefficients and diag = 0
+M = matrix(rexp(n*n, 0.1), nrow = n); diag(M) = rep(0, n)
+all.equal(colSums(M) - rowSums(M), as.vector(A %*% mat_2_vec(M)))
+## [1] TRUE</code></pre>
+<p>And the same, but for <code>$n = 20$</code>:</p>
+<pre class="r"><code>n = 20
+M = matrix(rexp(n*n, 0.1), nrow = n); diag(M) = rep(0, n)
+all.equal(colSums(M) - rowSums(M), as.vector(get_const_matrix(n) %*% mat_2_vec(M)))
+## [1] TRUE</code></pre>
+</div>
+<div id="from-a-nonlinear-target-to-a-linear-one" class="section level2">
+<h2>From a nonlinear target to a linear one</h2>
+<p>Okay, so we’ve managed to go from matrices to vectors, so that our optimization problem now looks like: <code>$$ \begin{aligned} &amp; \min_{x \in \mathbb{R}^{n(n-1)}} &amp; &amp; \|x\|_0 \\ &amp; \text{s.t} &amp; &amp; Ax = b \\ &amp;&amp;&amp; x \geq 0 \end{aligned} $$</code></p>
+<p>The fact that the constraint is expressed as an equality is of no concern, because one can always express an equality as a pair of inequalities.</p>
+<p>Now, in order to deal with the fact that the target is nonlinear, we will introduce the following change in the objective function: <code>$$ \begin{aligned} &amp; \min_{x \in \mathbb{R}^{n(n-1)}} &amp; &amp; \|x\|_1 \\ &amp; \text{s.t} &amp; &amp; Ax = b \\ &amp;&amp;&amp; x \geq 0 \end{aligned} $$</code></p>
+<p>where <code>$\|\cdot\|_1$</code> is the <code>$L^1$</code>-norm. Since we require that <code>$x \geq 0$</code>, we can again rewrite this as <code>$$ \begin{aligned} &amp; \min_{x \in \mathbb{R}^{n(n-1)}} &amp; &amp; c^T x \\ &amp; \text{s.t} &amp; &amp; Ax = b \\ &amp;&amp;&amp; x \geq 0 \end{aligned} $$</code></p>
+<p>with <code>$c = 1_{n(n-1)}$</code>. This is now <strong>a linear program</strong>.</p>
+<p>It also a <em>fundamentally different</em> problem: we are now minimizing the <strong>total amount of transactions</strong>, which is of course not the same as minimizing the <strong>total number of transactions</strong>.</p>
+<p>However, the work by <span class="citation">Donoho and Tanner (2005)</span> gives an answer: if there exists a <em>sufficiently sparse</em> representation for <code>$x$</code>, then the solution to both problems is the same. This is one of many results of the much interesting field of <a href="https://en.wikipedia.org/wiki/Compressed_sensing">Compressed Sensing</a>. I know very little about this field so I am not even going to try to give an introduction. However, if you are familiar with the <a href="https://en.wikipedia.org/wiki/Lasso_(statistics)">LASSO</a> technique in statistics, you might get an intuition of what is going on under the hood here.</p>
+</div>
+<div id="experiments" class="section level2">
+<h2>Experiments!</h2>
+</div>
+<div id="references" class="section level2 unnumbered">
+<h2>References</h2>
+<div id="refs" class="references">
+<div id="ref-boyd2004convex">
+<p>Boyd, Stephen, and Lieven Vandenberghe. 2004. <em>Convex Optimization</em>. Cambridge university press.</p>
+</div>
+<div id="ref-donoho2005sparse">
+<p>Donoho, David L, and Jared Tanner. 2005. “Sparse Nonnegative Solution of Underdetermined Linear Equations by Linear Programming.” <em>Proceedings of the National Academy of Sciences of the United States of America</em> 102 (27). National Acad Sciences: 9446–51.</p>
+</div>
+</div>
+</div>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'the-mblog';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-beta1/katex.min.js" integrity="sha384-O4hpKqcplNCe+jLuBVEXC10Rn1QEqAmX98lKAIFBEDxZI0a+6Z2w2n8AEtQbR4CD" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-beta1/contrib/auto-render.min.js" integrity="sha384-IiI65aU9ZYub2MY9zhtKd1H2ps7xxf+eb2YFG9lX6uRqpXCvBTOidPRCXCrQ++Uc" crossorigin="anonymous"></script>
+<script>
+
+
+(function() {
+  var i, text, code, codes = document.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      code.outerHTML = code.innerHTML;  
+      continue; 
+    }
+    i++;
+  }
+})();
+</script>
+<script>
+      renderMathInElement(
+          document.body,
+          {
+              delimiters: [
+                  {left: "$$", right: "$$", display: true},
+                  {left: "\\[", right: "\\]", display: true},
+                  {left: "$", right: "$", display: false}
+              ]
+          }
+      );
+</script>
+
+
+
+</body>
+</html>
+
