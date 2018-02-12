@@ -266,7 +266,7 @@
 <h2>Thinking in terms of vectors instead of matrices</h2>
 <p>As you may know from linear algebra courses, the space of matrices with real entries of size <code>$r\times c$</code>, <code>$\mathbb{R}^{r\times c}$</code>, is isomorphic to <code>$\mathbb{R}^{rc}$</code>. One isomorphism is the function: <code>$$ vec: \mathbb{R}^{r\times c} \to \mathbb{R}^{rc} $$</code></p>
 <p>such that <code>$\forall M \in \mathbb{R}^{r\times c}$</code>, <code>$v = vec(M)$</code> is a vector of size <code>$rc$</code> formed by stacking the columns of <code>$M$</code>.</p>
-<p>Given the above, we could therefore work with <code>$x = vec(X)$</code>. Since this is an isomorphism, and the restriction is linear in <code>$X$</code>, we know that: <code>$$ \exists A \in \mathbb{R}^{n\times n^2}: vec(X) = (X^T - X)1_n $$</code></p>
+<p>Given the above, we could therefore work with <code>$x = vec(X)$</code>. Since this is an isomorphism, and the restriction is linear in <code>$X$</code>, we know that: <code>$$ \exists A \in \mathbb{R}^{n\times n^2}, \forall X \in \mathbb{R}^{n\times n}: Avec(X) = (X^T - X)1_n $$</code></p>
 <p>This is all good, but we could further exploit the structure of the problem in order to make this translation into vectors more efficient. Indeed, recall that we are looking for a matrix with a diagonal of zeroes. Therefore, instead of working with vectors in <code>$\mathbb{R}^{n^2}$</code> and setting up restrictions for enforcing a zero diagonal, we could just remove the diagonal from our vector representation. This way, we reduce the number of degrees of freedom and the number of restrictions.</p>
 <p>Thus, let us define the function <code>$$ vec^*: \mathbb{R}^{n\times n} \to \mathbb{R}^{n(n-1)} $$</code></p>
 <p>such that <code>$v = vec^*(M)$</code> is a vector of size <code>$n(n-1)$</code> where the columns of <code>$M$</code> are stacked on top of one another, but the elements of the diagonal are removed. If we restrict the domain of <code>$vec^*$</code> to the set <code>$$ \mathcal{D}_0 = \{M \in \mathbb{R}^{n\times n}: \text{diag}(M) = 0_n\} $$</code></p>
@@ -387,7 +387,7 @@ start.time = Sys.time()
 X = solve_min_TX(D)
 ## Success: the objective function is 6407.031
 print(Sys.time() - start.time)
-## Time difference of 0.5948 secs</code></pre>
+## Time difference of 0.5839999 secs</code></pre>
 <p>Now, we went down from 9900 to 99 payments. And just to make sure, lets check the consistency:</p>
 <pre class="r"><code>all.equal(colSums(D) - rowSums(D), colSums(X) - rowSums(X))
 ## [1] TRUE</code></pre>
