@@ -28,7 +28,8 @@ Input data Using these input forms, you will enter the net amount owed by/to eac
       <pubDate>Fri, 09 Feb 2018 17:40:00 -0300</pubDate>
       
       <guid>/2018/02/09/simplifying-payments-with-linear-programming/</guid>
-      <description>Imagine you have a group of $n$ friends and that you regularly go out for drinks with them (say, a couple of times a week). At each of these meetings, a different member of the group pays for the bill, but you keep track of who consumed what (by using one of these popular apps, for example). You can expect that, after a month or so, everyone is going to owe everyone some amount of money.</description>
+      <description>Update: I have built a demo webapp implementing the solution presented here. You should try it!
+Imagine you have a group of $n$ friends and that you regularly go out for drinks with them (say, a couple of times a week). At each of these meetings, a different member of the group pays for the bill, but you keep track of who consumed what (by using one of these popular apps, for example).</description>
     </item>
     
   </channel>
