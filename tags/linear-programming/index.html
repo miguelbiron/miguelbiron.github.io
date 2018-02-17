@@ -215,6 +215,54 @@
   
     <article>
   <header>
+    <h2><a href="/2018/02/17/demo-for-simple-payments-with-linear-programming/">Demo for simple payments with linear programming</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>17 Feb 2018, 10:08</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/finance">finance</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/linear-programming">linear programming</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/javascript">javascript</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  I built a webapp that implements the solution for simplifying payments described in my previous post. It is written in Javascript and uses the LALOLib library for linear algebra and solving the linear program.
+Input data Using these input forms, you will enter the net amount owed by/to each participant: a positive number means that person is owed money, and a negative number means that person needs to pay other people (this is the $b$ vector in the mathematical formulation).
+  </p>
+
+  
+  <footer>
+    <a href="/2018/02/17/demo-for-simple-payments-with-linear-programming/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
     <h2><a href="/2018/02/09/simplifying-payments-with-linear-programming/">Simplifying payments with linear programming</a></h2>
 
     <div class="post-meta">
@@ -268,21 +316,11 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-beta1/katex.min.js" integrity="sha384-O4hpKqcplNCe+jLuBVEXC10Rn1QEqAmX98lKAIFBEDxZI0a+6Z2w2n8AEtQbR4CD" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-beta1/contrib/auto-render.min.js" integrity="sha384-IiI65aU9ZYub2MY9zhtKd1H2ps7xxf+eb2YFG9lX6uRqpXCvBTOidPRCXCrQ++Uc" crossorigin="anonymous"></script>
-<script>
 
 
-(function() {
-  var i, text, code, codes = document.getElementsByTagName('code');
-  for (i = 0; i < codes.length;) {
-    code = codes[i];
-    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
-      code.outerHTML = code.innerHTML;  
-      continue; 
-    }
-    i++;
-  }
-})();
-</script>
+<script src="/js/math-code.js"></script>
+
+
 <script>
       renderMathInElement(
           document.body,

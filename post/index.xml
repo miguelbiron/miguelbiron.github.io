@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
-    <lastBuildDate>Fri, 09 Feb 2018 17:40:00 -0300</lastBuildDate>
+    <lastBuildDate>Sat, 17 Feb 2018 10:08:00 -0300</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Demo for simple payments with linear programming</title>
+      <link>/2018/02/17/demo-for-simple-payments-with-linear-programming/</link>
+      <pubDate>Sat, 17 Feb 2018 10:08:00 -0300</pubDate>
+      
+      <guid>/2018/02/17/demo-for-simple-payments-with-linear-programming/</guid>
+      <description>I built a webapp that implements the solution for simplifying payments described in my previous post. It is written in Javascript and uses the LALOLib library for linear algebra and solving the linear program.
+Input data Using these input forms, you will enter the net amount owed by/to each participant: a positive number means that person is owed money, and a negative number means that person needs to pay other people (this is the $b$ vector in the mathematical formulation).</description>
+    </item>
     
     <item>
       <title>Simplifying payments with linear programming</title>

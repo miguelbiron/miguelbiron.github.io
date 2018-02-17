@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/2018/02/17/demo-for-simple-payments-with-linear-programming/</loc>
+    <lastmod>2018-02-17T10:08:00-03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2018/02/09/simplifying-payments-with-linear-programming/</loc>
     <lastmod>2018-02-09T17:40:00-03:00</lastmod>
   </url>
@@ -13,19 +18,25 @@
   
   <url>
     <loc>/tags/finance/</loc>
-    <lastmod>2018-02-09T17:40:00-03:00</lastmod>
+    <lastmod>2018-02-17T10:08:00-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/javascript/</loc>
+    <lastmod>2018-02-17T10:08:00-03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/linear-programming/</loc>
-    <lastmod>2018-02-09T17:40:00-03:00</lastmod>
+    <lastmod>2018-02-17T10:08:00-03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2018-02-09T17:40:00-03:00</lastmod>
+    <lastmod>2018-02-17T10:08:00-03:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -37,13 +48,13 @@
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2018-02-09T17:40:00-03:00</lastmod>
+    <lastmod>2018-02-17T10:08:00-03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2018-02-09T17:40:00-03:00</lastmod>
+    <lastmod>2018-02-17T10:08:00-03:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.36" />
 
-  <title>R &middot; The MBLog</title>
+  <title>Javascript &middot; The MBLog</title>
   
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-beta1/katex.min.css" integrity="sha384-VEnyslhHLHiYPca9KFkBB3CMeslnM9CzwjxsEbZTeA21JBm7tdLwKoZmCt3cZTYD" crossorigin="anonymous">
@@ -40,7 +40,7 @@
 
   
   
-  <link rel="alternate" type="application/rss+xml" title="The MBLog" href="/tags/r/index.xml" />
+  <link rel="alternate" type="application/rss+xml" title="The MBLog" href="/tags/javascript/index.xml" />
   
 
   
@@ -99,7 +99,7 @@
 
     
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="/tags/r/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      <a class="pure-menu-link" href="/tags/javascript/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
     </li>
     
 
@@ -208,20 +208,20 @@
 
 
 <div class="header">
-  <h1>R</h1>
+  <h1>Javascript</h1>
 </div>
 
 <div class="content">
   
     <article>
   <header>
-    <h2><a href="/2018/02/09/simplifying-payments-with-linear-programming/">Simplifying payments with linear programming</a></h2>
+    <h2><a href="/2018/02/17/demo-for-simple-payments-with-linear-programming/">Demo for simple payments with linear programming</a></h2>
 
     <div class="post-meta">
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>09 Feb 2018, 17:40</time>
+    <time>17 Feb 2018, 10:08</time>
   </div>
 
   
@@ -238,7 +238,7 @@
     
       <a class="post-taxonomy-tag" href="/tags/linear-programming">linear programming</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="/tags/r">R</a>
+      <a class="post-taxonomy-tag" href="/tags/javascript">javascript</a>
     
   </div>
   
@@ -249,12 +249,13 @@
   </header>
 
   <p>
-  Imagine you have a group of $n$ friends and that you regularly go out for drinks with them (say, a couple of times a week). At each of these meetings, a different member of the group pays for the bill, but you keep track of who consumed what (by using one of these popular apps, for example). You can expect that, after a month or so, everyone is going to owe everyone some amount of money.
+  I built a webapp that implements the solution for simplifying payments described in my previous post. It is written in Javascript and uses the LALOLib library for linear algebra and solving the linear program.
+Input data Using these input forms, you will enter the net amount owed by/to each participant: a positive number means that person is owed money, and a negative number means that person needs to pay other people (this is the $b$ vector in the mathematical formulation).
   </p>
 
   
   <footer>
-    <a href="/2018/02/09/simplifying-payments-with-linear-programming/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+    <a href="/2018/02/17/demo-for-simple-payments-with-linear-programming/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
   </footer>
   
 </article>
