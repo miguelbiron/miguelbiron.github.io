@@ -22,6 +22,15 @@
     </item>
     
     <item>
+      <title>Fourier Series</title>
+      <link>/tags/fourier-series/</link>
+      <pubDate>Fri, 09 Mar 2018 15:05:00 -0300</pubDate>
+      
+      <guid>/tags/fourier-series/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Javascript</title>
       <link>/tags/javascript/</link>
       <pubDate>Sat, 17 Feb 2018 10:08:00 -0300</pubDate>
@@ -42,9 +51,18 @@
     <item>
       <title>R</title>
       <link>/tags/r/</link>
-      <pubDate>Fri, 09 Feb 2018 17:40:00 -0300</pubDate>
+      <pubDate>Fri, 09 Mar 2018 15:05:00 -0300</pubDate>
       
       <guid>/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Visualization</title>
+      <link>/tags/visualization/</link>
+      <pubDate>Fri, 09 Mar 2018 15:05:00 -0300</pubDate>
+      
+      <guid>/tags/visualization/</guid>
       <description></description>
     </item>
     

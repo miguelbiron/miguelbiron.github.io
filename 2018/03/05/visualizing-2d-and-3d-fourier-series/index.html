@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.36" />
+
+  <title>Visualizing 2D and 3D Fourier series &middot; The MBLog</title>
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-beta1/katex.min.css" integrity="sha384-VEnyslhHLHiYPca9KFkBB3CMeslnM9CzwjxsEbZTeA21JBm7tdLwKoZmCt3cZTYD" crossorigin="anonymous">
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/">The MBLog</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/miguelbiron" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/miguelbiron" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://stackoverflow.com/users/5443023" target="_blank"><i class="fa fa-stack-overflow fa-fw"></i>Stack Overflow</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2018. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Visualizing 2D and 3D Fourier series</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>05 Mar 2018, 14:31</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/fourier-series">Fourier series</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/visualization">visualization</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/r">R</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <p>In this post, I will give a brief description of real valued Fourier series in higher dimensions, with some neat plots. I started reading about Fourier series because in the 1D case they are useful for extracting periodic patterns from time series data. However, I ended up fascinated by the pretty pictures one could get by plotting random 2D series, or by the periodic videos made by “walking” along a 3D space “painted”&quot; with a Fourier series.</p>
+<div id="fourier-series-in-higher-dimensions" class="section level2">
+<h2>Fourier series in higher dimensions</h2>
+<p>In this section I will be loosely following chapter 8 of the lecture notes prepared by Prof. Brad Osgood for his course <em>The fourier Transform and its Applications</em>, which can be found <a href="https://see.stanford.edu/materials/lsoftaee261/book-fall-07.pdf">here</a>.</p>
+<p>A function <code>$f:\mathbb{R}^d \to \mathbb{C}$</code> is said to be <strong>periodic with period 1</strong> if <code>$\forall \boldsymbol{x} \in \mathbb{R}^d, \mathbb{Z}^d$</code>: <code>$$ f(\boldsymbol{x} + \boldsymbol{n}) = f(\boldsymbol{x}) $$</code></p>
+<p>The set <code>$\mathbb{Z}^d$</code> is known as the <strong><code>$d$</code>-dimensional integer lattice</strong>, whose elements are <code>$d$</code>-tuples of integers: <code>$$ \mathbb{Z}^d = \{\boldsymbol{n} = (n_1, ..., n_d): n_1, ..., n_d \in \mathbb{Z}\} $$</code></p>
+<p>Now, suppose that <code>$f$</code> is a periodic function of period 1 which is also <strong>square-integrable</strong>; i.e., <code>$f \in L^2([-1, 1])$</code>. This means that: <code>$$ \int_{[-1, 1]^d} |f(\boldsymbol{x})|^2 d\boldsymbol{x} &lt; \infty $$</code></p>
+<p>In this case, we know there exists a Fourier series: <code>$$ s(\boldsymbol{x}) = \sum_{\boldsymbol{n}} c_{\boldsymbol{n}}e^{2\pi i \boldsymbol{n} \cdot \boldsymbol{x}} $$</code></p>
+<p>where <code>$c_{\boldsymbol{n}} \in \mathbb{C}^d$</code>, such that: <code>$$ \int_{[-1, 1]^d} |f(\boldsymbol{x}) - s(\boldsymbol{x})|^2 d\boldsymbol{x} = 0 $$</code></p>
+<p>This is a direct consequence of the fact that the set <code>$\{e^{2\pi i \boldsymbol{n} \cdot \boldsymbol{x}}: \boldsymbol{n} \in \mathbb{Z}^d \}$</code> is a basis for the space <code>$L^2([-1, 1])$</code>.</p>
+</div>
+<div id="fourier-series-of-real-valued-functions" class="section level2">
+<h2>Fourier series of real-valued functions</h2>
+<p>In the special case where <code>$f$</code> is real-valued, when can greatly reduce the amount of coefficients needed to represent <code>$f$</code>. Indeed, if the function is real-valued, then <code>$\forall \boldsymbol{x} \in \mathbb{R}^d$</code>: <code>$$ \begin{aligned} 0 &amp;= \Im(f(\boldsymbol{x})) \\ &amp;= \Im(s(\boldsymbol{x})) \\ &amp;= \Im\left( \sum_{\boldsymbol{n}} c_{\boldsymbol{n}}e^{2\pi i \boldsymbol{n} \cdot \boldsymbol{x}} \right) \\ &amp;= \sum_{\boldsymbol{n}} \Im( c_{\boldsymbol{n}}e^{2\pi i \boldsymbol{n} \cdot \boldsymbol{x}}) \end{aligned} $$</code></p>
+<p>where <code>$\Im(z)$</code> is the imaginary part of <code>$z$</code>. Now, using that: <code>$$ \begin{aligned} c_{\boldsymbol{n}} &amp;= a_{\boldsymbol{n}} + ib_{\boldsymbol{n}} \\ e^{2\pi i \boldsymbol{n} \cdot \boldsymbol{x}} &amp;= \cos(2\pi \boldsymbol{n} \cdot \boldsymbol{x}) + i\sin(2\pi \boldsymbol{n} \cdot \boldsymbol{x}) \end{aligned} $$</code></p>
+<p>we obtain: <code>$$ c_{\boldsymbol{n}}e^{2\pi i \boldsymbol{n} \cdot \boldsymbol{x}} = [a_{\boldsymbol{n}}\cos(2\pi \boldsymbol{n} \cdot \boldsymbol{x}) - b_{\boldsymbol{n}}\sin(2\pi \boldsymbol{n} \cdot \boldsymbol{x})] + i[b_{\boldsymbol{n}}\cos(2\pi \boldsymbol{n} \cdot \boldsymbol{x}) + a_{\boldsymbol{n}}\sin(2\pi \boldsymbol{n} \cdot \boldsymbol{x})] $$</code></p>
+<p>Hence, <code>$$ \Im(c_{\boldsymbol{n}}e^{2\pi i \boldsymbol{n} \cdot \boldsymbol{x}}) = b_{\boldsymbol{n}}\cos(2\pi \boldsymbol{n} \cdot \boldsymbol{x}) + a_{\boldsymbol{n}}\sin(2\pi \boldsymbol{n} \cdot \boldsymbol{x}) $$</code></p>
+<p>Now, the only way to force this element of the series to be zero for every <code>$\boldsymbol{x}$</code> and <code>$\boldsymbol{n}$</code> would be to set <code>$a_{\boldsymbol{n}} = b_{\boldsymbol{n}} = 0$</code>, which would defeat the purpose. Instead, we are going to take advantage of the parity of <code>$\cos$</code> and <code>$\sin$</code>. Indeed, for every <code>$\boldsymbol{n} \in \mathbb{Z}^d$</code>, the term associated with its additive inverse will be: <code>$$ \begin{aligned} \Im(c_{-\boldsymbol{n}}e^{2\pi i (-\boldsymbol{n}) \cdot \boldsymbol{x}}) &amp;=  b_{-\boldsymbol{n}}\cos(2\pi (-\boldsymbol{n}) \cdot \boldsymbol{x}) + a_{-\boldsymbol{n}}\sin(2\pi (-\boldsymbol{n}) \cdot \boldsymbol{x}) \\ &amp;=  b_{-\boldsymbol{n}}\cos(2\pi \boldsymbol{n} \cdot \boldsymbol{x}) - a_{-\boldsymbol{n}}\sin(2\pi \boldsymbol{n} \cdot \boldsymbol{x}) \end{aligned} $$</code></p>
+<p>Therefore, by pairing every <code>$\boldsymbol{n}$</code>-th term with its corresponding <code>$(-\boldsymbol{n})$</code>-th term: <code>$$ \Im(c_{\boldsymbol{n}}e^{2\pi i \boldsymbol{n} \cdot \boldsymbol{x}}) + \Im(c_{-\boldsymbol{n}}e^{2\pi i (-\boldsymbol{n}) \cdot \boldsymbol{x}})  = (b_{\boldsymbol{n}} + b_{-\boldsymbol{n}})\cos(2\pi \boldsymbol{n} \cdot \boldsymbol{x}) + (-a_{\boldsymbol{n}} + a_{-\boldsymbol{n}})\sin(2\pi \boldsymbol{n} \cdot \boldsymbol{x}) $$</code></p>
+<p>we see that we can cancel the imaginary part of the series by forcing every sum of such pairs of elements to be 0 with the condition that: <code>$$ \begin{aligned} b_{\boldsymbol{n}} + b_{-\boldsymbol{n}} &amp;= 0 \\ a_{\boldsymbol{n}} - a_{-\boldsymbol{n}} &amp;= 0 \end{aligned} \qquad \forall \boldsymbol{n} \in \mathbb{Z}^d $$</code></p>
+<p>This can be restated in terms of the original <code>$c_{\boldsymbol{n}}$</code>: <code>$$ c_{-\boldsymbol{n}} = a_{-\boldsymbol{n}} + ib_{-\boldsymbol{n}} = a_{\boldsymbol{n}} - ib_{\boldsymbol{n}} = c_{\boldsymbol{n}}^* $$</code></p>
+<p>which means that <strong>the coefficients of a real-valued fourier series come in conjugate pairs</strong>.</p>
+<p>Finally, suppose that we have a partition of <code>$\mathbb{Z}^d = \{\boldsymbol{0}_d\} \cup \mathcal{H}_- \cup \mathcal{H}_+$</code>, such that:</p>
+<ol style="list-style-type: decimal">
+<li><code>$\mathcal{H}_- \cap \mathcal{H}_+ = \mathcal{H}_- \cap \{\boldsymbol{0}_d\} = \mathcal{H}_+ \cap \{\boldsymbol{0}_d\} = \emptyset$</code></li>
+<li><code>$\forall \boldsymbol{n} \neq \boldsymbol{0}_d: (\boldsymbol{n} \in \mathcal{H}_- \land -\boldsymbol{n} \in \mathcal{H}_+) \lor (\boldsymbol{n} \in \mathcal{H}_+ \land -\boldsymbol{n} \in \mathcal{H}_-)$</code></li>
+</ol>
+<p>We could then rewrite the formula for the Fourier series as: <code>$$ \begin{aligned} s(\boldsymbol{x}) &amp;= \sum_{\boldsymbol{n}} c_{\boldsymbol{n}} e^{2\pi i \boldsymbol{n} \cdot \boldsymbol{x}} \\ &amp;= c_{\boldsymbol{0}_d} + \sum_{\boldsymbol{n} \in \mathcal{H}_-}  c_{\boldsymbol{n}} e^{2\pi i \boldsymbol{n} \cdot \boldsymbol{x}} + \sum_{\boldsymbol{n} \in \mathcal{H}_+}  c_{\boldsymbol{n}} e^{2\pi i \boldsymbol{n} \cdot \boldsymbol{x}} \\ &amp;= c_{\boldsymbol{0}_d} + \sum_{\boldsymbol{n} \in \mathcal{H}_-} \left( c_{\boldsymbol{n}} e^{2\pi i \boldsymbol{n} \cdot \boldsymbol{x}} + c_{\boldsymbol{n}}^* e^{-2\pi i \boldsymbol{n} \cdot \boldsymbol{x}} \right) \\ &amp;= c_{\boldsymbol{0}_d} + \sum_{\boldsymbol{n} \in \mathcal{H}_-} \left( c_{\boldsymbol{n}} e^{2\pi i \boldsymbol{n} \cdot \boldsymbol{x}} + (c_{\boldsymbol{n}} e^{2\pi i \boldsymbol{n} \cdot \boldsymbol{x}})^* \right) \\ &amp;= c_{\boldsymbol{0}_d} + \sum_{\boldsymbol{n} \in \mathcal{H}_-} 2\Re \left(  c_{\boldsymbol{n}} e^{2\pi i \boldsymbol{n} \cdot \boldsymbol{x}} \right) \\ &amp;= c_{\boldsymbol{0}_d} + \sum_{\boldsymbol{n} \in \mathcal{H}_-} 2 \left( a_{\boldsymbol{n}}\cos(2\pi \boldsymbol{n} \cdot \boldsymbol{x}) - b_{\boldsymbol{n}}\sin(2\pi \boldsymbol{n} \cdot \boldsymbol{x}) \right) \\ &amp;= a_{\boldsymbol{0}_d} + \sum_{\boldsymbol{n} \in \mathcal{H}_-} \left( a_{\boldsymbol{n}}\cos(2\pi \boldsymbol{n} \cdot \boldsymbol{x}) + b_{\boldsymbol{n}}\sin(2\pi \boldsymbol{n} \cdot \boldsymbol{x}) \right) \\ \end{aligned} $$</code></p>
+<p>where in the last line we simply renamed the coefficients of the series (<code>$c_{\boldsymbol{0}_d}$</code> is real because it is its own complex conjugate). Note that when <code>$d = 1$</code>, we recover the standard formula for the 1D Fourier series, because in that case <code>$\mathcal{H}_- = \mathbb{Z}^+$</code>.</p>
+<p>For the sake of completeness, here is a simple procedure for creating the partition:</p>
+<ol style="list-style-type: decimal">
+<li><code>$\mathcal{H}_- \gets \emptyset$</code></li>
+<li>For <code>$k=1...d$</code>
+<ol style="list-style-type: lower-roman">
+<li><code>$\mathcal{H}_- \gets \mathcal{H}_- \cup \{\boldsymbol{n} \in \mathbb{Z}^d: n_{1:k-1}=0 \land n_k &lt; 0 \}$</code></li>
+</ol></li>
+<li><code>$\mathcal{H}_+ \gets (\mathbb{Z}^d \setminus \{\boldsymbol{0}_d\}) \setminus \mathcal{H}_-$</code></li>
+</ol>
+</div>
+<div id="section" class="section level2">
+<h2></h2>
+</div>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2018/02/17/demo-for-simple-payments-with-linear-programming/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2018/02/17/demo-for-simple-payments-with-linear-programming/">Demo for simple payments with linear programming</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'the-mblog';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-beta1/katex.min.js" integrity="sha384-O4hpKqcplNCe+jLuBVEXC10Rn1QEqAmX98lKAIFBEDxZI0a+6Z2w2n8AEtQbR4CD" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-beta1/contrib/auto-render.min.js" integrity="sha384-IiI65aU9ZYub2MY9zhtKd1H2ps7xxf+eb2YFG9lX6uRqpXCvBTOidPRCXCrQ++Uc" crossorigin="anonymous"></script>
+
+
+<script src="/js/math-code.js"></script>
+
+
+<script>
+      renderMathInElement(
+          document.body,
+          {
+              delimiters: [
+                  {left: "$$", right: "$$", display: true},
+                  {left: "\\[", right: "\\]", display: true},
+                  {left: "$", right: "$", display: false}
+              ]
+          }
+      );
+</script>
+
+
+
+</body>
+</html>
+
