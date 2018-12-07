@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.36" />
+  <meta name="generator" content="Hugo 0.52" />
 
   <title>Simplifying payments with linear programming &middot; The MBLog</title>
   
@@ -236,7 +236,10 @@
 
 </div>
 
-  <p><em>Update: I have built <a href="/2018/02/17/demo-for-simple-payments-with-linear-programming/">a demo webapp</a> implementing the solution presented here. You should try it!</em></p>
+  
+
+
+<p><em>Update: I have built <a href="/2018/02/17/demo-for-simple-payments-with-linear-programming/">a demo webapp</a> implementing the solution presented here. You should try it!</em></p>
 <p>Imagine you have a group of <code>$n$</code> friends and that you regularly go out for drinks with them (say, a couple of times a week). At each of these meetings, a different member of the group pays for the bill, but you keep track of who consumed what (by using one of these popular <a href="http://www.businessinsider.com/5-apps-that-take-the-pain-out-of-splitting-the-bill-2016-1/#-3">apps</a>, for example). You can expect that, after a month or so, everyone is going to owe everyone some amount of money. Settling these debts will involve a cumbersome sequence of up to <code>$n(n-1)$</code> payments from each member to another. The question which obviously arises is then:</p>
 <blockquote>
 <p>Can we reduce the number of transactions to a minimum while ensuring that everyone gets paid what he or she is owed?</p>
@@ -388,7 +391,7 @@ start.time = Sys.time()
 X = solve_min_TX(D)
 ## Success: the objective function is 6407.031
 print(Sys.time() - start.time)
-## Time difference of 0.8580489 secs</code></pre>
+## Time difference of 0.6037734 secs</code></pre>
 <p>Now, we went down from 9900 to 99 payments. And just to make sure, lets check the consistency:</p>
 <pre class="r"><code>all.equal(colSums(D) - rowSums(D), colSums(X) - rowSums(X))
 ## [1] TRUE</code></pre>
