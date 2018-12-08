@@ -303,7 +303,7 @@ l_data = sample_data(N=N,Tau=Tau,rho=rho,median_pd=median_pd,a=a)</code></pre>
 <p>We are now ready to run the chain. We will do this for 1,000 iterations. Note that we will supply the exact PDs that were used to simulate the data. This is the best case scenario for our method.</p>
 <pre class="r"><code>library(BIDC)
 
-S = 50L # number of iterations
+S = 1000L # number of iterations
 chain = bidc_pd(S=S, y=l_data$y, p_d=l_data$p_d, verbose = 0L)</code></pre>
 <div id="trace-plots" class="section level3">
 <h3>Trace plots</h3>
