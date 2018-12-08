@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.52" />
+
+  <title>BIDC: Bayesian Inference for Default Correlations &middot; The MBLog</title>
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-beta1/katex.min.css" integrity="sha384-VEnyslhHLHiYPca9KFkBB3CMeslnM9CzwjxsEbZTeA21JBm7tdLwKoZmCt3cZTYD" crossorigin="anonymous">
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/">The MBLog</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/miguelbiron" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/miguelbiron" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://stackoverflow.com/users/5443023" target="_blank"><i class="fa fa-stack-overflow fa-fw"></i>Stack Overflow</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2018. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>BIDC: Bayesian Inference for Default Correlations</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>07 Dec 2018, 17:40</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/finance">finance</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/credit-risk">credit risk</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/r">R</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  
+
+
+<p>I just released <a href="https://github.com/miguelbiron/BIDC">a package on Github called BIDC</a>, which stands for <strong>B</strong>ayesian <strong>I</strong>nference for <strong>D</strong>efault <strong>C</strong>orrelations. I started working on this together with my colleague Victor Medina back when I was a financial stability analyst at the Superintendency of Banks and Financial Institutions in Chile. In fact, you can see the slides from our presentation at the 2017 version of SBIF conference <a href="https://www.sbif.cl/sbifweb/servlet/ConozcaSBIF?indice=C.D.A&amp;idContenido=16698">here</a>.</p>
+<div id="description" class="section level2">
+<h2>Description</h2>
+<p>BIDC is a package that aims to provide multiple tools for performing Bayesian inference on the default correlation of a given portfolio, along with any other latent factor. Currently, we support only one model, but we would like to expand this in the future.</p>
+<p>The available model is a generalization of the finite version of the Vasicek model for correlated defaults, which allows for clients with different probabilities of default (PD). Also, we assume a uniform prior on <code>$\rho$</code>.</p>
+<p><span class="math display">\[
+\begin{aligned}
+\rho &amp;\sim \text{U}(0,1) \\
+M_t &amp;\overset{iid}{\sim} \mathcal{N}(0,1) \\
+y_{it}|\rho, M_t, P_{it} &amp;\overset{ind}{\sim} \text{Bernoulli}\left( \frac{\Phi^{-1}(P_{it}) - M_t\sqrt{\rho}}{\sqrt{1-\rho}}  \right)
+\end{aligned}
+\]</span></p>
+<p>The main data input corresponds to a matrix <code>$Y$</code> of size <code>$N\times T$</code>, where <code>$T$</code> is the amount of periods observed and <code>$N$</code> is the number of individuals observed each period, which for simplicity we assume constant. Then, <code>$Y$</code> contains a value of 1 at position <code>$(n,t)$</code> if at time <code>$t$</code> the n-th client defaulted.</p>
+<p>In order to infer <code>$(\rho, \{M_t\}_t)$</code> we use the assumption that <strong>the PDs are exogenous</strong>. Hence, the user needs to supply anothe matrix <code>$P$</code> of the same dimensions as <code>$Y$</code>, which at the position <code>$(n, t)$</code> should containt a good estimate of the PD for the corresponding value in <code>$Y$</code>.</p>
+<p>It is crucial to understand that <code>$Y$</code> is <strong>exchangeable within columns</strong>: for <code>$t_1 \neq t_2$</code>, the value at <code>$(n, t_1)$</code> is not necessarily associated with the same client that the value at <code>$(n, t_2)$</code> is. In other words, we could reshufle each column and still obtain the same information. However, the matrix <code>$P$</code> has to be reshuffled in the same way to maintain consistency.</p>
+<p>To sample from the posterior distribution, we use a Metropolis-Hastings-within-Gibbs approach. We need to use MH steps because the full conditionals are not analytically tractable. However, all the updates are one-dimensional, so that the algorithm does not face the difficulties that</p>
+</div>
+<div id="example" class="section level2">
+<h2>Example</h2>
+<p>Let us start by defining a function that will let us obtain simulated data. We simulate the latent factors <code>$\{M_t\}_t$</code> as coming from an AR(1) process, so that the output resembles a business cycle.</p>
+<p>Note that the function returns the binary matrix <code>$Y$</code>, and also the actual PDs used to sample <code>$Y$</code>.</p>
+<pre class="r"><code>sample_data = function(N, Tau, rho, median_pd, a){
+  # N: number of individuals
+  # Tau: time steps
+  # rho: default correlation
+  # median_pd: median marginal probability of default
+  # a: AR(1) param for M_t process
+  # output: list with: y  : matrix size N \times Tau of integers in (0,1)
+  #                    p_d: matrix size N \times Tau of PDs
+
+  # sample M_t process
+  M = numeric(Tau)
+  M[1L] = rnorm(1L)
+  for(tau in 2L:Tau) M[tau] = a*M[tau-1L] + sqrt(1-a^2)*rnorm(1L)
+
+  # sample critical values
+  x_c = matrix(rnorm(N*Tau, mean = qnorm(median_pd)),
+               nrow = N)
+
+  # sample y_it
+  y = matrix(NA_integer_, nrow = N, ncol = Tau)
+  for(tau in 1L:Tau) {
+    prob = pnorm((x_c[,tau]-sqrt(rho)*M[tau])/sqrt(1-rho))
+    y[,tau] = 1L*(runif(N) &lt;= prob)
+  }
+
+  p_d = pnorm(x_c) # probit to get probabilities
+  return(list(y=y,p_d=p_d))
+}</code></pre>
+<p>Now we sample the actual data. We set a value of <code>$\rho=0.15$</code>.</p>
+<pre class="r"><code>set.seed(1313)
+
+# parameters for simulated data
+N = 1000L # number of individuals
+Tau = 100L # time steps
+rho = 0.15 # default correlation
+median_pd = 0.25 # median marginal probability of default
+a = 0.9 # AR(1) param for M_t process
+
+# get data
+l_data = sample_data(N=N,Tau=Tau,rho=rho,median_pd=median_pd,a=a)</code></pre>
+<p>We are now ready to run the chain. We will do this for 1,000 iterations. Note that we will supply the exact PDs that were used to simulate the data. This is the best case scenario for our method.</p>
+<pre class="r"><code>library(BIDC)
+
+S = 50L # number of iterations
+chain = bidc_pd(S=S, y=l_data$y, p_d=l_data$p_d, verbose = 0L)</code></pre>
+<div id="trace-plots" class="section level3">
+<h3>Trace plots</h3>
+<p>The trace plot for <code>$\rho$</code> show that the chain converges rapidly to a region close to the true value, and then slows down.</p>
+<pre class="r"><code>suppressPackageStartupMessages(library(dplyr))
+suppressPackageStartupMessages(library(tidyr))
+suppressPackageStartupMessages(library(ggplot2))
+
+chain[,c(1L, Tau, Tau+1L)] %&gt;%
+  as.data.frame() %&gt;%
+  setNames(c(&quot;M_1&quot;, paste0(&quot;M_&quot;, Tau), &quot;rho&quot;)) %&gt;%
+  mutate(s = seq_len(nrow(.))) %&gt;%
+  gather(select = -&quot;s&quot;) %&gt;%
+  ggplot(aes(x = s, y = value, colour = key)) +
+  geom_line(show.legend = FALSE) +
+  facet_wrap(~key, scales = &quot;free_y&quot;, ncol = 1L)</code></pre>
+<p><img src="/post/2018-12-07-BIDC-R-package_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+</div>
+<div id="confidence-band-for-m_t" class="section level3">
+<h3>Confidence band for <code>$M_t$</code></h3>
+<pre class="r"><code>chain[,-(Tau+1L)] %&gt;%
+  as_tibble() %&gt;%
+  setNames(1L:ncol(.)) %&gt;%
+  mutate(s=1L:nrow(.)) %&gt;%
+  gather(&quot;tau&quot;, &quot;M&quot;, select = -s) %&gt;%
+  mutate(tau=as.integer(tau)) %&gt;%
+  group_by(tau) %&gt;%
+  summarise(qtiles = list(data.frame(
+    q   = c(&quot;.025&quot;, &quot;.975&quot;),
+    val = quantile(M, c(0.025, 0.975)),
+    stringsAsFactors = FALSE
+  ))) %&gt;%
+  ungroup() %&gt;%
+  unnest() %&gt;%
+  spread(q, val) %&gt;%
+  ggplot(aes(x=tau, ymin=`.025`, ymax=`.975`, fill = &quot;1&quot;)) +
+  geom_ribbon(show.legend = FALSE) +
+  labs(x = &quot;Time&quot;,
+       y = &quot;95% posterior band for M_t&quot;)</code></pre>
+<p><img src="/post/2018-12-07-BIDC-R-package_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+</div>
+</div>
+<div id="example-with-bad-estimates-of-the-pd" class="section level2">
+<h2>Example with bad estimates of the PD</h2>
+<p>Now, we are going to run the chain again, but instead of using the true PDs, we will be a noisy version, which is shrunken towards the median PD with a random intensity. This is to demonstrate that our approach is very sensitive to the quality of the PDs used.</p>
+<p>We draw the mixing coefficient from a Beta distribution that is centered around 0.2. We do this type of perturbation because we assume that, even though the user might have a bad PD model, it will at least be able to estimate well the overall PD.</p>
+<pre class="r"><code>mix_c = matrix(rbeta(N*Tau, shape1 = 2, shape2 = 5), nrow = N)
+p_d_noisy = mix_c*median_pd + (1-mix_c)*l_data$p_d
+chain = bidc_pd(S=S, y=l_data$y, p_d=p_d_noisy, verbose = 0L)</code></pre>
+<div id="trace-plots-1" class="section level3">
+<h3>Trace plots</h3>
+<p>We see now that the trace for <code>$\rho$</code> is very far away from the true value.</p>
+<pre class="r"><code>chain[,c(1L, Tau, Tau+1L)] %&gt;%
+  as.data.frame() %&gt;%
+  setNames(c(&quot;M_1&quot;, paste0(&quot;M_&quot;, Tau), &quot;rho&quot;)) %&gt;%
+  mutate(s = seq_len(nrow(.))) %&gt;%
+  gather(select = -&quot;s&quot;) %&gt;%
+  ggplot(aes(x = s, y = value, colour = key)) +
+  geom_line(show.legend = FALSE) +
+  facet_wrap(~key, scales = &quot;free_y&quot;, ncol = 1L)</code></pre>
+<p><img src="/post/2018-12-07-BIDC-R-package_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+</div>
+<div id="confidence-band-for-m_t-1" class="section level3">
+<h3>Confidence band for <code>$M_t$</code></h3>
+<p>Compare this with the case of perfect information.</p>
+<pre class="r"><code>chain[,-(Tau+1L)] %&gt;%
+  as_tibble() %&gt;%
+  setNames(1L:ncol(.)) %&gt;%
+  mutate(s=1L:nrow(.)) %&gt;%
+  gather(&quot;tau&quot;, &quot;M&quot;, select = -s) %&gt;%
+  mutate(tau=as.integer(tau)) %&gt;%
+  group_by(tau) %&gt;%
+  summarise(qtiles = list(data.frame(
+    q   = c(&quot;.025&quot;, &quot;.975&quot;),
+    val = quantile(M, c(0.025, 0.975)),
+    stringsAsFactors = FALSE
+  ))) %&gt;%
+  ungroup() %&gt;%
+  unnest() %&gt;%
+  spread(q, val) %&gt;%
+  ggplot(aes(x=tau, ymin=`.025`, ymax=`.975`, fill = &quot;1&quot;)) +
+  geom_ribbon(show.legend = FALSE) +
+  labs(x = &quot;Time&quot;,
+       y = &quot;95% posterior band for M_t&quot;)</code></pre>
+<p><img src="/post/2018-12-07-BIDC-R-package_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+</div>
+</div>
+<div id="conclusions" class="section level2">
+<h2>Conclusions</h2>
+<p>For me, this package serves as a way to consolidate a lot of work that I had done towards tackling the problem of inferring default correlations. Hopefully, the “hello world” method that is made available in this release will serve as a motivation for me and others to propose more interesting models and methods.</p>
+</div>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2018/03/09/visualizing-fourier-series-in-2d-and-3d/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2018/03/09/visualizing-fourier-series-in-2d-and-3d/">Visualizing Fourier series in 2D and 3D</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'the-mblog';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-beta1/katex.min.js" integrity="sha384-O4hpKqcplNCe+jLuBVEXC10Rn1QEqAmX98lKAIFBEDxZI0a+6Z2w2n8AEtQbR4CD" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-beta1/contrib/auto-render.min.js" integrity="sha384-IiI65aU9ZYub2MY9zhtKd1H2ps7xxf+eb2YFG9lX6uRqpXCvBTOidPRCXCrQ++Uc" crossorigin="anonymous"></script>
+
+
+<script src="/js/math-code.js"></script>
+
+
+<script>
+      renderMathInElement(
+          document.body,
+          {
+              delimiters: [
+                  {left: "$$", right: "$$", display: true},
+                  {left: "\\[", right: "\\]", display: true},
+                  {left: "$", right: "$", display: false}
+              ]
+          }
+      );
+</script>
+
+
+
+</body>
+</html>
+
