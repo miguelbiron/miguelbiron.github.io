@@ -7,24 +7,51 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
-    <lastBuildDate>Fri, 07 Dec 2018 17:40:00 -0800</lastBuildDate>
+    <lastBuildDate>Sun, 09 Dec 2018 19:18:00 -0800</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Bbvi</title>
+      <link>/tags/bbvi/</link>
+      <pubDate>Sun, 09 Dec 2018 19:18:00 -0800</pubDate>
+      
+      <guid>/tags/bbvi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Credit Risk</title>
       <link>/tags/credit-risk/</link>
-      <pubDate>Fri, 07 Dec 2018 17:40:00 -0800</pubDate>
+      <pubDate>Sat, 08 Dec 2018 19:30:11 -0800</pubDate>
       
       <guid>/tags/credit-risk/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Elasticnet</title>
+      <link>/tags/elasticnet/</link>
+      <pubDate>Sun, 09 Dec 2018 19:18:00 -0800</pubDate>
+      
+      <guid>/tags/elasticnet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Factor Analysis</title>
+      <link>/tags/factor-analysis/</link>
+      <pubDate>Sun, 09 Dec 2018 19:18:00 -0800</pubDate>
+      
+      <guid>/tags/factor-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Finance</title>
       <link>/tags/finance/</link>
-      <pubDate>Fri, 07 Dec 2018 17:40:00 -0800</pubDate>
+      <pubDate>Sat, 08 Dec 2018 19:30:11 -0800</pubDate>
       
       <guid>/tags/finance/</guid>
       <description></description>
@@ -36,6 +63,15 @@
       <pubDate>Fri, 09 Mar 2018 15:05:00 -0300</pubDate>
       
       <guid>/tags/fourier-series/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gibbs Sampler</title>
+      <link>/tags/gibbs-sampler/</link>
+      <pubDate>Sat, 08 Dec 2018 19:30:11 -0800</pubDate>
+      
+      <guid>/tags/gibbs-sampler/</guid>
       <description></description>
     </item>
     
@@ -58,9 +94,36 @@
     </item>
     
     <item>
+      <title>Mcmc</title>
+      <link>/tags/mcmc/</link>
+      <pubDate>Sat, 08 Dec 2018 19:30:11 -0800</pubDate>
+      
+      <guid>/tags/mcmc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nonparametric Bayes</title>
+      <link>/tags/nonparametric-bayes/</link>
+      <pubDate>Sun, 09 Dec 2018 19:18:00 -0800</pubDate>
+      
+      <guid>/tags/nonparametric-bayes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Qualifying Course</title>
+      <link>/tags/qualifying-course/</link>
+      <pubDate>Sun, 09 Dec 2018 19:18:00 -0800</pubDate>
+      
+      <guid>/tags/qualifying-course/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>R</title>
       <link>/tags/r/</link>
-      <pubDate>Fri, 07 Dec 2018 17:40:00 -0800</pubDate>
+      <pubDate>Sat, 08 Dec 2018 19:30:11 -0800</pubDate>
       
       <guid>/tags/r/</guid>
       <description></description>

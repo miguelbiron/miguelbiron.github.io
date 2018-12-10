@@ -7,19 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
-    <lastBuildDate>Fri, 07 Dec 2018 17:40:00 -0800</lastBuildDate>
+    <lastBuildDate>Sun, 09 Dec 2018 19:18:00 -0800</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>BIDC: Bayesian Inference for Default Correlations</title>
-      <link>/2018/12/07/bidc-bayesian-inference-for-default-correlations/</link>
-      <pubDate>Fri, 07 Dec 2018 17:40:00 -0800</pubDate>
+      <title>PhD Qualifying Course Reports: Term 1</title>
+      <link>/2018/12/09/phd-qualifying-course-reports-term-1/</link>
+      <pubDate>Sun, 09 Dec 2018 19:18:00 -0800</pubDate>
       
-      <guid>/2018/12/07/bidc-bayesian-inference-for-default-correlations/</guid>
-      <description>I just released a package on Github called BIDC, which stands for Bayesian Inference for Default Correlations. I started working on this together with my colleague Victor Medina back when I was a financial stability analyst at the Superintendency of Banks and Financial Institutions in Chile. In fact, you can see the slides from our presentation at the 2017 version of SBIF conference here.
-Description BIDC is a package that aims to provide multiple tools for performing Bayesian inference on the default correlation of a given portfolio, along with any other latent factor.</description>
+      <guid>/2018/12/09/phd-qualifying-course-reports-term-1/</guid>
+      <description>It’s crazy how fast this first term went by! But I loved it. The Department of Statistics at UBC is insanely awesome. The people are the best, from students to faculty and staff. The academic environment is very stimulating, especially in my area of interest, with lots of active reading groups and frequent seminars related to Bayesian Statistics, Probabilistic Models and Statistical Learning. We even had the privilege of attending a talk by the expert in Hamiltonian Monte Carlo Michael Betancourt.</description>
+    </item>
+    
+    <item>
+      <title>BIDC: Bayesian Inference for Default Correlations</title>
+      <link>/2018/12/08/bidc-bayesian-inference-for-default-correlations/</link>
+      <pubDate>Sat, 08 Dec 2018 19:30:11 -0800</pubDate>
+      
+      <guid>/2018/12/08/bidc-bayesian-inference-for-default-correlations/</guid>
+      <description>I just released a package on Github called BIDC, which stands for Bayesian Inference for Default Correlations. I started working on this together with my colleague Victor Medina back when I was a financial stability analyst at the Superintendency of Banks and Financial Institutions in Chile. In fact, you can see the slides from our presentation at the 2017 version of SBIF conference here (Biron and Medina 2017). The difference is that, instead of Stan, the method available in BIDC uses a Metropolis-Hastings-within-Gibbs MCMC sampler (Gilks 1996) written entirely in base R, that runs much faster.</description>
     </item>
     
     <item>

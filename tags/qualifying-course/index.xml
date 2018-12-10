@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Qualifying Course on The MBLog</title>
+    <link>/tags/qualifying-course/</link>
+    <description>Recent content in Qualifying Course on The MBLog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 09 Dec 2018 19:18:00 -0800</lastBuildDate>
+    
+	<atom:link href="/tags/qualifying-course/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PhD Qualifying Course Reports: Term 1</title>
+      <link>/2018/12/09/phd-qualifying-course-reports-term-1/</link>
+      <pubDate>Sun, 09 Dec 2018 19:18:00 -0800</pubDate>
+      
+      <guid>/2018/12/09/phd-qualifying-course-reports-term-1/</guid>
+      <description>It’s crazy how fast this first term went by! But I loved it. The Department of Statistics at UBC is insanely awesome. The people are the best, from students to faculty and staff. The academic environment is very stimulating, especially in my area of interest, with lots of active reading groups and frequent seminars related to Bayesian Statistics, Probabilistic Models and Statistical Learning. We even had the privilege of attending a talk by the expert in Hamiltonian Monte Carlo Michael Betancourt.</description>
+    </item>
+    
+  </channel>
+</rss>

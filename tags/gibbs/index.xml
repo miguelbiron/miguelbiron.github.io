@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Credit Risk on The MBLog</title>
-    <link>/tags/credit-risk/</link>
-    <description>Recent content in Credit Risk on The MBLog</description>
+    <title>Gibbs on The MBLog</title>
+    <link>/tags/gibbs/</link>
+    <description>Recent content in Gibbs on The MBLog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
-    <lastBuildDate>Sat, 08 Dec 2018 19:30:11 -0800</lastBuildDate>
+    <lastBuildDate>Fri, 07 Dec 2018 17:40:00 -0800</lastBuildDate>
     
-	<atom:link href="/tags/credit-risk/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/gibbs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>BIDC: Bayesian Inference for Default Correlations</title>
-      <link>/2018/12/08/bidc-bayesian-inference-for-default-correlations/</link>
-      <pubDate>Sat, 08 Dec 2018 19:30:11 -0800</pubDate>
+      <link>/2018/12/07/bidc-bayesian-inference-for-default-correlations/</link>
+      <pubDate>Fri, 07 Dec 2018 17:40:00 -0800</pubDate>
       
-      <guid>/2018/12/08/bidc-bayesian-inference-for-default-correlations/</guid>
+      <guid>/2018/12/07/bidc-bayesian-inference-for-default-correlations/</guid>
       <description>I just released a package on Github called BIDC, which stands for Bayesian Inference for Default Correlations. I started working on this together with my colleague Victor Medina back when I was a financial stability analyst at the Superintendency of Banks and Financial Institutions in Chile. In fact, you can see the slides from our presentation at the 2017 version of SBIF conference here (Biron and Medina 2017). The difference is that, instead of Stan, the method available in BIDC uses a Metropolis-Hastings-within-Gibbs MCMC sampler (Gilks 1996) written entirely in base R, that runs much faster.</description>
     </item>
     

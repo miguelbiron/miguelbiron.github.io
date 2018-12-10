@@ -3,8 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/2018/12/07/bidc-bayesian-inference-for-default-correlations/</loc>
-    <lastmod>2018-12-07T17:40:00-08:00</lastmod>
+    <loc>/2018/12/09/phd-qualifying-course-reports-term-1/</loc>
+    <lastmod>2018-12-09T19:18:00-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2018/12/08/bidc-bayesian-inference-for-default-correlations/</loc>
+    <lastmod>2018-12-08T19:30:11-08:00</lastmod>
   </url>
   
   <url>
@@ -27,20 +32,44 @@
   </url>
   
   <url>
+    <loc>/tags/bbvi/</loc>
+    <lastmod>2018-12-09T19:18:00-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/credit-risk/</loc>
-    <lastmod>2018-12-07T17:40:00-08:00</lastmod>
+    <lastmod>2018-12-08T19:30:11-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/elasticnet/</loc>
+    <lastmod>2018-12-09T19:18:00-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/factor-analysis/</loc>
+    <lastmod>2018-12-09T19:18:00-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/finance/</loc>
-    <lastmod>2018-12-07T17:40:00-08:00</lastmod>
+    <lastmod>2018-12-08T19:30:11-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/fourier-series/</loc>
     <lastmod>2018-03-09T15:05:00-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/gibbs-sampler/</loc>
+    <lastmod>2018-12-08T19:30:11-08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -57,26 +86,44 @@
   </url>
   
   <url>
+    <loc>/tags/mcmc/</loc>
+    <lastmod>2018-12-08T19:30:11-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/nonparametric-bayes/</loc>
+    <lastmod>2018-12-09T19:18:00-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/post/</loc>
-    <lastmod>2018-12-07T17:40:00-08:00</lastmod>
+    <lastmod>2018-12-09T19:18:00-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/qualifying-course/</loc>
+    <lastmod>2018-12-09T19:18:00-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/r/</loc>
-    <lastmod>2018-12-07T17:40:00-08:00</lastmod>
+    <lastmod>2018-12-08T19:30:11-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2018-12-07T17:40:00-08:00</lastmod>
+    <lastmod>2018-12-09T19:18:00-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2018-12-07T17:40:00-08:00</lastmod>
+    <lastmod>2018-12-09T19:18:00-08:00</lastmod>
     <priority>0</priority>
   </url>
   
