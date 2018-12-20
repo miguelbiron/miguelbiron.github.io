@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/2018/12/20/sbglm-sparse-bayes-generalized-linear-models/</loc>
+    <lastmod>2018-12-20T11:00:00-08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2018/12/09/phd-qualifying-course-reports-term-1/</loc>
     <lastmod>2018-12-09T19:18:00-08:00</lastmod>
   </url>
@@ -32,6 +37,12 @@
   </url>
   
   <url>
+    <loc>/tags/bayesian/</loc>
+    <lastmod>2018-12-20T11:00:00-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/bbvi/</loc>
     <lastmod>2018-12-09T19:18:00-08:00</lastmod>
     <priority>0</priority>
@@ -51,7 +62,7 @@
   
   <url>
     <loc>/tags/factor-analysis/</loc>
-    <lastmod>2018-12-09T19:18:00-08:00</lastmod>
+    <lastmod>2018-12-20T11:00:00-08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -93,13 +104,19 @@
   
   <url>
     <loc>/tags/nonparametric-bayes/</loc>
-    <lastmod>2018-12-09T19:18:00-08:00</lastmod>
+    <lastmod>2018-12-20T11:00:00-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/nsfa/</loc>
+    <lastmod>2018-12-20T11:00:00-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2018-12-09T19:18:00-08:00</lastmod>
+    <lastmod>2018-12-20T11:00:00-08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -116,14 +133,20 @@
   </url>
   
   <url>
+    <loc>/tags/sparse/</loc>
+    <lastmod>2018-12-20T11:00:00-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/</loc>
-    <lastmod>2018-12-09T19:18:00-08:00</lastmod>
+    <lastmod>2018-12-20T11:00:00-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2018-12-09T19:18:00-08:00</lastmod>
+    <lastmod>2018-12-20T11:00:00-08:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
-    <lastBuildDate>Sun, 09 Dec 2018 19:18:00 -0800</lastBuildDate>
+    <lastBuildDate>Thu, 20 Dec 2018 11:00:00 -0800</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bayesian</title>
+      <link>/tags/bayesian/</link>
+      <pubDate>Thu, 20 Dec 2018 11:00:00 -0800</pubDate>
+      
+      <guid>/tags/bayesian/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Bbvi</title>
@@ -42,7 +51,7 @@
     <item>
       <title>Factor Analysis</title>
       <link>/tags/factor-analysis/</link>
-      <pubDate>Sun, 09 Dec 2018 19:18:00 -0800</pubDate>
+      <pubDate>Thu, 20 Dec 2018 11:00:00 -0800</pubDate>
       
       <guid>/tags/factor-analysis/</guid>
       <description></description>
@@ -105,9 +114,18 @@
     <item>
       <title>Nonparametric Bayes</title>
       <link>/tags/nonparametric-bayes/</link>
-      <pubDate>Sun, 09 Dec 2018 19:18:00 -0800</pubDate>
+      <pubDate>Thu, 20 Dec 2018 11:00:00 -0800</pubDate>
       
       <guid>/tags/nonparametric-bayes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nsfa</title>
+      <link>/tags/nsfa/</link>
+      <pubDate>Thu, 20 Dec 2018 11:00:00 -0800</pubDate>
+      
+      <guid>/tags/nsfa/</guid>
       <description></description>
     </item>
     
@@ -126,6 +144,15 @@
       <pubDate>Sat, 08 Dec 2018 19:30:11 -0800</pubDate>
       
       <guid>/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sparse</title>
+      <link>/tags/sparse/</link>
+      <pubDate>Thu, 20 Dec 2018 11:00:00 -0800</pubDate>
+      
+      <guid>/tags/sparse/</guid>
       <description></description>
     </item>
     

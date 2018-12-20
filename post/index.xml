@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
-    <lastBuildDate>Sun, 09 Dec 2018 19:18:00 -0800</lastBuildDate>
+    <lastBuildDate>Thu, 20 Dec 2018 11:00:00 -0800</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>SBGLM: Sparse Bayes Generalized Linear Models</title>
+      <link>/2018/12/20/sbglm-sparse-bayes-generalized-linear-models/</link>
+      <pubDate>Thu, 20 Dec 2018 11:00:00 -0800</pubDate>
+      
+      <guid>/2018/12/20/sbglm-sparse-bayes-generalized-linear-models/</guid>
+      <description>Hey! I’ve just released a package on Github called SBGLM, which stands for Sparse Bayes Generalized Linear Models. The purpose of this package is mainly a way to store a lot of code that I have rotting in my laptop, which I think is relevant and useful. The models will follow the Bayesian tradition of the “spike-and-slab” prior for sparsity (Mitchell and Beauchamp 1988), so do not expect to see the so called “Bayesian Lasso” here because it doesn’t work.</description>
+    </item>
     
     <item>
       <title>PhD Qualifying Course Reports: Term 1</title>
