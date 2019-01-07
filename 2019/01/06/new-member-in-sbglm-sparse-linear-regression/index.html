@@ -309,7 +309,7 @@ image(M, axes=FALSE, asp = 1, useRaster = TRUE)</code></pre>
 <p>Now we are ready to run the Gibbs sampler on this data:</p>
 <pre class="r"><code>library(SBGLM)
 
-S=200L
+S=2000L
 results = sblm_gibbs(
   X       = dta$X,
   y       = dta$y,
@@ -318,7 +318,16 @@ results = sblm_gibbs(
 )</code></pre>
 <pre><code>## Chain initialized. Beginning iterations!
 ## 
-## Iteration 200: |A| = 11, sigma_2_e = 28.42, sigma_2_b = 122.48</code></pre>
+## Iteration 200: |A| = 11, sigma_2_e = 28.42, sigma_2_b = 122.48
+## Iteration 400: |A| = 14, sigma_2_e = 25.95, sigma_2_b = 65.07
+## Iteration 600: |A| = 12, sigma_2_e = 28.80, sigma_2_b = 67.35
+## Iteration 800: |A| = 10, sigma_2_e = 30.75, sigma_2_b = 250.25
+## Iteration 1000: |A| = 10, sigma_2_e = 32.57, sigma_2_b = 182.99
+## Iteration 1200: |A| = 12, sigma_2_e = 29.33, sigma_2_b = 203.41
+## Iteration 1400: |A| = 9, sigma_2_e = 27.43, sigma_2_b = 215.18
+## Iteration 1600: |A| = 11, sigma_2_e = 30.91, sigma_2_b = 81.36
+## Iteration 1800: |A| = 12, sigma_2_e = 28.91, sigma_2_b = 220.84
+## Iteration 2000: |A| = 11, sigma_2_e = 35.74, sigma_2_b = 194.41</code></pre>
 <p>Great! Let us plot the traces for <code>$\pi$</code> and the variances to check that everything is running as it should:</p>
 <pre class="r"><code>suppressPackageStartupMessages(library(dplyr))
 library(tidyr)
@@ -369,8 +378,8 @@ t(trace_beta * trace_z) %&gt;%
   theme_bw()</code></pre>
 <p><img src="/post/2019-01-06-new-sblm-in-sbglm_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
 <p>Note how the sum total of the 9 components quickly approaches the expected value of 9 <code>$\times$</code> 3 <code>$=$</code> 27 (highlighted with the dashed line in the plot), and then stays very close to it. However, there is a sort of non-stationary dynamic in which the model never actually settles on any particular combination of the components. This is, of course, expected, given the extremely high correlation that the covariates within the group have. In other words, the sampler has a very good idea about where the total contribution of the group is, but it has a hard time inferring how to allocate this effect among the components, given the little data there is. In turn, because one coefficient gets assigned the effect of many others, the magnitudes of the components of <code>$\beta$</code> varies considerably, and this “confusion” propagates back to <code>$\sigma_b^2$</code> which explains its behavior.</p>
-<p>The above phenomenon should not be unexpected, given the high within-group correlation and the fact that<code>$N \ll P$</code>. Even though the predictions of the model won’t be affected (the fact that <code>$\sigma_e^2$</code> is correctly recovered is evidence of this), one should always be cautious when interpreting the contributions of each variable to the response variable, given that the effects of highly correlated variables cannot be disentangled easily, especially with few data.</p>
-<p>To finish this analysis, let us plot the posterior probability of each covariate being included in the model:</p>
+<p>The above phenomenon should not be unexpected, given the high within-group correlation and the fact that <code>$N \ll P$</code>. Even though the predictions of the model won’t be affected (the fact that <code>$\sigma_e^2$</code> is correctly recovered is evidence of this), one should always be cautious when interpreting the contributions of each variable to the response variable, given that the effects of highly correlated variables cannot be disentangled easily, especially with few data.</p>
+<p>To finish this analysis, let us plot the posterior probability of each covariate being included in the model. The vertical line shows the limit for the active set:</p>
 <pre class="r"><code>sapply(results[seq.int(S%/%2L+1L, S, 1L)], function(l){
   z=logical(P)
   z[l$A]=TRUE
@@ -386,7 +395,7 @@ t(trace_beta * trace_z) %&gt;%
   theme_bw() +
   labs(y = &quot;Posterior probability of inclusion&quot;)</code></pre>
 <p><img src="/post/2019-01-06-new-sblm-in-sbglm_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
-<p>Here the same issue arises again: given the symmetries present in the data, we would expect a uniform probability of inclusion of the first 45 variables (active set), and then close to 0 probability for the rest. Even though the latter assumption holds, the former does not. Instead, we see a non-uniform probability of inclusion among the true relevant covariates, which is consistent with what the previous plots showed.</p>
+<p>Given the symmetries present in the data, we would expect a uniform probability of inclusion of the first 45 variables (active set), and then close to 0 probability for the rest. The latter assumption holds almost perfectly, except for one variable at the end with a quite high probability of inclusion. On the other hand, we see a non-uniform probability of inclusion among the true relevant covariates, which is consistent with the problems previously described.</p>
 </div>
 <div id="conclusions" class="section level2">
 <h2>Conclusions</h2>
