@@ -391,7 +391,7 @@ start.time = Sys.time()
 X = solve_min_TX(D)
 ## Success: the objective function is 6407.031
 print(Sys.time() - start.time)
-## Time difference of 0.5980213 secs</code></pre>
+## Time difference of 0.5953553 secs</code></pre>
 <p>Now, we went down from 9900 to 99 payments. And just to make sure, lets check the consistency:</p>
 <pre class="r"><code>all.equal(colSums(D) - rowSums(D), colSums(X) - rowSums(X))
 ## [1] TRUE</code></pre>

@@ -15,6 +15,11 @@ p {
   text-align: justify;
 }
 
+pre > code {
+    font-size: 0.9em;
+    line-height: 1.3em;
+}
+
 .pure-img-responsive {
     max-width: 100%;
     height: auto;

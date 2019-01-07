@@ -1,5 +1,23 @@
 body {
     color: #777;
+    background: white
+}
+
+h2 {
+  margin-top: 2em;
+}
+
+h3 {
+  margin-top: 1.5em;
+}
+
+p {
+  text-align: justify;
+}
+
+pre > code {
+    font-size: 0.9em;
+    line-height: 1.3em;
 }
 
 .pure-img-responsive {
