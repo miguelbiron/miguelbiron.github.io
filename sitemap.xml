@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/2019/01/06/new-member-in-sbglm-sparse-linear-regression/</loc>
+    <lastmod>2019-01-06T22:00:00-08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2018/12/20/sbglm-sparse-bayes-generalized-linear-models/</loc>
     <lastmod>2018-12-20T11:00:00-08:00</lastmod>
   </url>
@@ -38,7 +43,7 @@
   
   <url>
     <loc>/tags/bayesian/</loc>
-    <lastmod>2018-12-20T11:00:00-08:00</lastmod>
+    <lastmod>2019-01-06T22:00:00-08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -97,6 +102,12 @@
   </url>
   
   <url>
+    <loc>/tags/linear-regression/</loc>
+    <lastmod>2019-01-06T22:00:00-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/mcmc/</loc>
     <lastmod>2018-12-08T19:30:11-08:00</lastmod>
     <priority>0</priority>
@@ -116,7 +127,7 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2018-12-20T11:00:00-08:00</lastmod>
+    <lastmod>2019-01-06T22:00:00-08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -134,19 +145,19 @@
   
   <url>
     <loc>/tags/sparse/</loc>
-    <lastmod>2018-12-20T11:00:00-08:00</lastmod>
+    <lastmod>2019-01-06T22:00:00-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2018-12-20T11:00:00-08:00</lastmod>
+    <lastmod>2019-01-06T22:00:00-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2018-12-20T11:00:00-08:00</lastmod>
+    <lastmod>2019-01-06T22:00:00-08:00</lastmod>
     <priority>0</priority>
   </url>
   

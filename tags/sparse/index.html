@@ -44,7 +44,7 @@
   
 
   
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
@@ -212,6 +212,55 @@
 </div>
 
 <div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="/2019/01/06/new-member-in-sbglm-sparse-linear-regression/">New member in SBGLM: sparse linear regression</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>06 Jan 2019, 22:00</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/bayesian">bayesian</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/sparse">sparse</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/linear-regression">linear regression</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  Hi all!
+This blog is about the latest addition to my package SBGLM: a sparse linear regression. This was actually the first model I intended to put in the package, but I didn’t had time to finish implementing it during last term.
+Description of the model This is a very basic Bayesian linear regression model, with a minor twist that lets us impose sparsity in the effects: $$ \begin{aligned} \sigma_b^2 &amp;\sim \text{Inv-Gamma}(s_b, r_b) \\ \sigma_e^2 &amp;\sim \text{Inv-Gamma}(s_e, r_e) \\ \pi &amp;\sim \text{Beta}(s_1, s_2) \\ \beta_k|\sigma_b^2 &amp;\overset{iid}{\sim} \mathcal{N}(0, \sigma_b^2) \\ z_k|\pi &amp;\overset{iid}{\sim} \text{Bernoulli}(\pi) \\ y|\beta, z, X, \sigma_e^2 &amp;\sim \mathcal{N}(X(\beta \odot z), \sigma_e^2 I_N) \end{aligned} $$
+  </p>
+
+  
+  <footer>
+    <a href="/2019/01/06/new-member-in-sbglm-sparse-linear-regression/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
   
     <article>
   <header>

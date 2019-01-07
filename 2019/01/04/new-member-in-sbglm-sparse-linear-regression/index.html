@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.52" />
+
+  <title>New member in SBGLM: sparse linear regression &middot; The MBLog</title>
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-beta1/katex.min.css" integrity="sha384-VEnyslhHLHiYPca9KFkBB3CMeslnM9CzwjxsEbZTeA21JBm7tdLwKoZmCt3cZTYD" crossorigin="anonymous">
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/">The MBLog</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/miguelbiron" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/miguelbiron" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://stackoverflow.com/users/5443023" target="_blank"><i class="fa fa-stack-overflow fa-fw"></i>Stack Overflow</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2018. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>New member in SBGLM: sparse linear regression</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>04 Jan 2019, 17:00</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/bayesian">bayesian</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/sparse">sparse</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/linear-regression">linear regression</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  
+
+
+<p>Hi all!</p>
+<p>This blog is about the latest addition to my <a href="https://github.com/miguelbiron/SBGLM">package SBGLM</a>: a sparse linear regression. This was actually the first model I intended to put in the package, but I didn’t had time to finish implementing it during last term.</p>
+<div id="description-of-the-model" class="section level2">
+<h2>Description of the model</h2>
+<p>This is a very basic Bayesian linear regression model, with a minor twist that lets us impose sparsity in the effects: <code>$$ \begin{aligned} \sigma_b^2 &amp;\sim \text{Inv-Gamma}(s_b, r_b) \\ \sigma_e^2 &amp;\sim \text{Inv-Gamma}(s_e, r_e) \\ \pi &amp;\sim \text{Beta}(s_1, s_2) \\ \beta_k|\sigma_b^2 &amp;\overset{iid}{\sim} \mathcal{N}(0, \sigma_b^2) \\ z_k|\pi &amp;\overset{iid}{\sim} \text{Bernoulli}(\pi) \\ y|\beta, z, X, \sigma_e^2 &amp;\sim \mathcal{N}(X(\beta \odot z), \sigma_e^2 I_N) \end{aligned} $$</code></p>
+<p>where <code>$\odot$</code> is the Hadamard (element-wise) product of two vectors, <code>$y$</code> is the vector of responses of length <code>$N$</code>, and <code>$X$</code> is a matrix of covariates of size <code>$N\times P$</code>. As you can see, the way sparsity is introduced is by “masking” or “switching on and off” components of <code>$\beta$</code> using the binary variables <code>$z$</code>. Thus, the effect of a given covariate <code>$x_k$</code> on the response will be <code>$\beta_k z_k$</code>, and not just <code>$\beta_k$</code>.</p>
+<p>The oldest reference I know about this way of introducing sparsity in a Bayesian model is <span class="citation">Griffiths and Ghahramani (2011)</span>, although the technique might be older. I actually discovered it by myself, so I was glad when I saw that people had already been using it. Also, I’m almost sure that this is just an equivalent way of implementing the spike-and-slab prior, so that is why probably nobody mentions it as something new.</p>
+<p>The posterior distribution is obtained by using a Gibbs sampler, which is easy to derive given the conjugacies present in the model. Everything is implemented using only base R, which I try to promote in order to minimize dependency issues in the future.</p>
+<p>As with all things Bayesian, the beauty of this model resides in its assessment of uncertainty, since asymptotically (in MCMC runs) exact post-selection inference comes for free, something that for frequentist methods like Lasso <span class="citation">(Tibshirani 1996)</span> or the Elastic Net <span class="citation">(Zou and Hastie 2005)</span> has only very recently been made possible (see for example <span class="citation">Lee et al. (2016)</span>). Recall that the brute-force alternative for evaluation of post-selection uncertainty in such models was to bootstrap your dataset, having to do a full cross-validation search of parameters for each run. Needless to say, this quickly becomes unfeasible.</p>
+<p>Indeed, the posterior distribution <code>$p(\beta \odot z|\mathcal{D})$</code> of the effects, where <code>$\mathcal{D} = \{y, X\}$</code>, contains all the relevant information for assessing uncertainty by explicitly accounting for the introduction of sparsity. In fact, the posterior <code>$p(z|\mathcal{D})$</code> of the switches themselves is also interesting, as it reveals the joint probability that each of the covariates is included in the model.</p>
+</div>
+<div id="gibbs-updates" class="section level2">
+<h2>Gibbs updates</h2>
+<p>In order to construct the Gibbs sampler, the first thing to notice is that, conditional on <code>$z$</code>, the model actually reduces to a standard Bayesian linear regression, where the design matrix is now <code>$X_{:A}$</code>, with <code>$A=\{k: z_k=1\}$</code> being the active set of covariates. Thus, the Gibbs updates in the sparse model for the active coefficients and the variances are exactly the same as for the standard model.</p>
+<p>Recall that the update for <code>$\beta$</code> in a standard linear regression requires a matrix inversion. Here, we also face that problem. However, because we only do this for the active components, then as long as <code>$|A|$</code> is small (~100) this implementation runs in surprisingly reasonable times, regardless of how large <code>$P$</code> can be. In the future, I would like to test if having element-wise updates could be used to tackle larger problems, at the expense of perhaps having slower mixing times.</p>
+<p>The inactive components <code>$\beta_{-A}$</code> still have to updated, though. It is easy to show that the full conditional is equal to the prior. This is very intuitive, because they are being disconnected from the model by their switches, so there is no information from the data that can be used to update our belief about them.</p>
+<p>The update for the switches is the only one that is trickier to derive, so I leave it here for future reference: <code>$$ \frac{\mathbb{P}(z_k=1|-, \mathcal{D})}{\mathbb{P}(z_k=0|-, \mathcal{D})} = \exp \left( \log \pi -\log(1-\pi) - \frac{\beta_k}{2\sigma_e^2} \left[ -2(X^Ty)_{k} + \beta_k (X^TX)_{kk} -2(X^TX)_{:k}^Tz_0 \right] \right) $$</code></p>
+<p>where <code>$z_0$</code> is equal to <code>$z$</code> but has a 0 at the <code>$k$</code>-th position. Note that the computations that are expensive (<code>$X^Ty, X^TX$</code>) have to be calculated once and stored so that they’re available for re-use.</p>
+<p>Finally, the update for <code>$\pi$</code> follows from the standard Beta-Bernoulli conjugacy: <code>$$ \pi|z \sim \text{Beta}\left(s_1 + \sum_k z_k, s_2 + P - \sum_k z_k \right) $$</code></p>
+</div>
+<div id="example-simulated-data" class="section level2">
+<h2>Example: simulated data</h2>
+<p>My intention here is to show you how this model performs by applying it to a simulated dataset. The data generating process is actually a modified version of one of the simulations that <span class="citation">Zou and Hastie (2005)</span> used to evaluate the Elastic Net. Their approach had a minor mistake, which I pointed out <a href="/2018/12/09/phd-qualifying-course-reports-term-1/">in my report about this paper</a>. However, the fundamental ideas are the same: to assess the behavior of the model under the situation <code>$N \ll P$</code>, where only a few of the available covariates are relevant, and also when those variables are clumped into groups with high within-group correlation and between-group independence. This is achieved by creating groups of covariates from slightly perturbed sine functions, with each group having a different frequency. This way, we ensure that the covariates are uncorrelated. The problem with the method in the Elastic Net paper was that it wrongly used groups of constant features, so that the within-group correlation was actually 0, not as intended. Finally, all the variables in the relevant groups are assigned the same coefficient, and the rest are assigned a beta equal to 0.</p>
+<p>Hopefully, the following code is clear enough so that the ideas of the previous paragraph are evident:</p>
+<pre class="r"><code>get_data = function(N, P, nz_P, n_groups, b_val, sigma_b, sigma_e){
+  # define beta
+  p = nz_P %/% n_groups
+  beta = numeric(P)
+  beta[seq_len(nz_P)] = b_val
+  
+  # define groups of highly correlated variables
+  # the lowest sigma_b is, the highest the within-group correlation
+  X = do.call(cbind,
+              lapply(seq_len(n_groups),
+                     function(u) {
+                       matrix(rep(sin(u * (1:N)), p), ncol=p) +
+                         matrix(rnorm(N*p, sd= sigma_b), nrow=N)
+                     }))
+  
+  # append many noise covariates
+  X = cbind(X, matrix(rnorm(N*(P-nz_P)), nrow = N))
+  
+  # get response
+  y = as.vector(X %*% beta) + rnorm(N, sd = sigma_e)
+  
+  return(list(X=X, y=y))
+}</code></pre>
+<p>Now we sample the data. The following plot shows the correlation matrix for the first 150 of the total 500 covariates, which shows exactly the pattern that we would expect.</p>
+<pre class="r"><code>set.seed(1313)
+
+N = 200L # number of observations
+P = 500L # total number of covariates
+nz_P = 45L # number of covariates with nonzero coefficients
+n_groups = 5L # number of groups of covariates (nz_P/n_groups within each)
+b_val = 3 # value of the effect for nonzero coefficients
+sigma_b = 0.1 # noise added to covariates in the same group
+sigma_e = 5 # noise in the response
+
+dta = get_data(N, P, nz_P, n_groups, b_val, sigma_b, sigma_e)
+
+# visualize correlations
+M = cor(dta$X[,seq_len(150L)])
+M = t(apply(M, 2, rev))
+op = par(mar = rep(0, 4))
+image(M, axes=FALSE, asp = 1, useRaster = TRUE)</code></pre>
+<p><img src="/post/2019-01-04-new-sblm-in-sbglm_files/figure-html/unnamed-chunk-2-1.png" width="480" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>par(op)</code></pre>
+<p>Now we are ready to run the Gibbs sampler on this data:</p>
+<pre class="r"><code>library(SBGLM)
+
+S=2000L
+results = sblm_gibbs(
+  X       = dta$X,
+  y       = dta$y,
+  S       = S,
+  verbose = 200L
+)</code></pre>
+<pre><code>## Chain initialized. Beginning iterations!
+## 
+## Iteration 200: |A| = 11, sigma_2_e = 28.42, sigma_2_b = 122.48
+## Iteration 400: |A| = 14, sigma_2_e = 25.95, sigma_2_b = 65.07
+## Iteration 600: |A| = 12, sigma_2_e = 28.80, sigma_2_b = 67.35
+## Iteration 800: |A| = 10, sigma_2_e = 30.75, sigma_2_b = 250.25
+## Iteration 1000: |A| = 10, sigma_2_e = 32.57, sigma_2_b = 182.99
+## Iteration 1200: |A| = 12, sigma_2_e = 29.33, sigma_2_b = 203.41
+## Iteration 1400: |A| = 9, sigma_2_e = 27.43, sigma_2_b = 215.18
+## Iteration 1600: |A| = 11, sigma_2_e = 30.91, sigma_2_b = 81.36
+## Iteration 1800: |A| = 12, sigma_2_e = 28.91, sigma_2_b = 220.84
+## Iteration 2000: |A| = 11, sigma_2_e = 35.74, sigma_2_b = 194.41</code></pre>
+<p>Great! Let us plot the traces for <code>$\pi$</code> and the variances to check that everything is running as it should:</p>
+<pre class="r"><code>suppressPackageStartupMessages(library(dplyr))
+library(tidyr)
+library(ggplot2)
+
+t(sapply(results, function(l){
+  c(l$pi_z, l$sigma_2_e, l$sigma_2_b)
+})) %&gt;%
+  as.data.frame.matrix() %&gt;%
+  setNames(c(&quot;Pi&quot;, &quot;sigma_2_e&quot;, &quot;sigma_2_b&quot;)) %&gt;%
+  mutate(Iteration = seq_len(S)) %&gt;%
+  gather(&quot;key&quot;, &quot;Value&quot;, select = -Iteration) %&gt;%
+  ggplot(aes(x = Iteration, y = Value, color = &quot;1&quot;)) +
+  geom_line(show.legend = FALSE) +
+  scale_y_log10() +
+  theme_bw() +
+  facet_wrap(~key, scales = &quot;free_y&quot;, ncol = 1L)</code></pre>
+<p><img src="/post/2019-01-04-new-sblm-in-sbglm_files/figure-html/unnamed-chunk-4-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>For <code>$\pi$</code> and <code>$\sigma_e^2$</code> we see the nice “fuzzy caterpillar” pattern that should emerge, and in fact both of them settle very quickly close to their true values. For <code>$\sigma_b^2$</code>, however, we observe a more random-walk behavior. Since its update depends only on the active coefficients, we now plot some of them:</p>
+<pre class="r"><code>t(sapply(results, function(l){l$beta[c(5L, 40L, 140L)]})) %&gt;%
+  as.data.frame.matrix() %&gt;%
+  setNames(paste(&quot;Beta&quot;, c(5L, 40L, 140L))) %&gt;%
+  mutate(Iteration = seq_len(S)) %&gt;%
+  gather(&quot;key&quot;, &quot;Value&quot;, select = -Iteration) %&gt;%
+  ggplot(aes(x = Iteration, y = Value, color = &quot;1&quot;)) +
+  geom_line(show.legend = FALSE) +
+  theme_bw() +
+  facet_wrap(~key, scales = &quot;free_y&quot;)</code></pre>
+<p><img src="/post/2019-01-04-new-sblm-in-sbglm_files/figure-html/unnamed-chunk-5-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>For <code>$\beta_{40}$</code> and <code>$\beta_{140}$</code> there doesn’t seem to be any problem. We wouldn’t expect issues for the latter anyway, since it is not relevant for the model and therefore is updated using the prior. We do note that <code>$\beta_{5}$</code>, which is in the true model, exhibits again a random-walk behavior.</p>
+<p>In order to dig deeper into this issue, we will construct a plot that focuses on the first group of variables <code>$(\beta_1,...,\beta_9)$</code>, by assessing the contribution that each of them make to their sum. The sum is a relevant quantity because the covariates they represent are almost exact copies, so it is meaningful to talk about a “total” effect arising from the group.</p>
+<pre class="r"><code># colorblind palette
+# http://www.cookbook-r.com/Graphs/Colors_(ggplot2)/#a-colorblind-friendly-palette
+cbbPalette &lt;- c(&quot;#000000&quot;, &quot;#E69F00&quot;, &quot;#56B4E9&quot;, &quot;#009E73&quot;, &quot;#F0E442&quot;, &quot;#0072B2&quot;, &quot;#D55E00&quot;, &quot;#CC79A7&quot;)
+
+sel_beta = seq_len(nz_P %/% n_groups)
+trace_beta = sapply(results, function(l){l$beta[sel_beta]})
+trace_z = sapply(results, function(l){sel_beta %in% l$A})
+t(trace_beta * trace_z) %&gt;%
+  as.data.frame.matrix() %&gt;%
+  setNames(sel_beta) %&gt;%
+  mutate(Iteration = seq_len(S)) %&gt;%
+  gather(&quot;key&quot;, &quot;Value&quot;, select = -Iteration) %&gt;%
+  ggplot(aes(x = Iteration, y = Value, fill = key)) +
+  geom_area(show.legend = FALSE) +
+  geom_hline(yintercept = b_val * (nz_P %/% n_groups), linetype = &quot;dashed&quot;) +
+  scale_fill_manual(name = &quot;&quot;, values = c(cbbPalette, &quot;navyblue&quot;)) +
+  theme_bw()</code></pre>
+<p><img src="/post/2019-01-04-new-sblm-in-sbglm_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p>Note how the sum total of the 9 components quickly approaches the expected value of 9 <code>$\times$</code> 3 <code>$=$</code> 27 (highlighted with the dashed line in the plot), and then stays very close to it. However, there is a sort of non-stationary dynamic in which the model never actually settles on any particular combination of the components. This is, of course, expected, given the extremely high correlation that the covariates within the group have. In other words, the sampler has a very good idea about where the total contribution of the group is, but it has a hard time inferring how to allocate this effect among the components, given the little data there is. In turn, because one coefficient gets assigned the effect of many others, the magnitudes of the components of <code>$\beta$</code> varies considerably, and this “confusion” propagates back to <code>$\sigma_b^2$</code> which explains its behavior.</p>
+<p>The above phenomenon should not be unexpected, given the high within-group correlation and the fact that<code>$N \ll P$</code>. Even though the predictions of the model won’t be affected (the fact that <code>$\sigma_e^2$</code> is correctly recovered is evidence of this), one should always be cautious when interpreting the contributions of each variable to the response variable, given that the effects of highly correlated variables cannot be disentangled easily, especially with few data.</p>
+<p>To finish this analysis, let us plot the posterior probability of each covariate being included in the model:</p>
+<pre class="r"><code>sapply(results[seq.int(S%/%2L+1L, S, 1L)], function(l){
+  z=logical(P)
+  z[l$A]=TRUE
+  z
+}) %&gt;%
+  rowMeans() %&gt;%
+  as.data.frame() %&gt;%
+  setNames(c(&quot;prob&quot;)) %&gt;%
+  mutate(Variable = seq_len(P)) %&gt;%
+  ggplot(aes(x = Variable, y = prob)) +
+  geom_line(show.legend = FALSE) +
+  geom_vline(xintercept = nz_P, linetype = &quot;dotted&quot;) +
+  theme_bw() +
+  labs(y = &quot;Posterior probability of inclusion&quot;)</code></pre>
+<p><img src="/post/2019-01-04-new-sblm-in-sbglm_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<p>Here the same issue arises again: given the symmetries present in the data, we would expect a uniform probability of inclusion of the first 45 variables (active set), and then close to 0 probability for the rest. Even though the latter assumption holds, the former does not. Instead, we see a non-uniform probability of inclusion among the true relevant covariates, which is consistent with what the previous plots showed.</p>
+</div>
+<div id="conclusions" class="section level2">
+<h2>Conclusions</h2>
+<p>In this post I wanted to be a party-pooper, by fitting the sparse Bayesian linear regression to a terrible dataset, showing how it manages to work in one aspect, but fails to deliver in the other. Even though this was obviously expected, it is important to see how one can get</p>
+</div>
+<div id="references" class="section level2 unnumbered">
+<h2>References</h2>
+<div id="refs" class="references">
+<div id="ref-griffiths2011indian">
+<p>Griffiths, Thomas L, and Zoubin Ghahramani. 2011. “The Indian Buffet Process: An Introduction and Review.” <em>Journal of Machine Learning Research</em> 12 (Apr): 1185–1224.</p>
+</div>
+<div id="ref-lee2016exact">
+<p>Lee, Jason D, Dennis L Sun, Yuekai Sun, Jonathan E Taylor, and others. 2016. “Exact Post-Selection Inference, with Application to the Lasso.” <em>The Annals of Statistics</em> 44 (3). Institute of Mathematical Statistics: 907–27.</p>
+</div>
+<div id="ref-tibshirani1996regression">
+<p>Tibshirani, Robert. 1996. “Regression Shrinkage and Selection via the Lasso.” <em>Journal of the Royal Statistical Society. Series B (Methodological)</em>. JSTOR, 267–88.</p>
+</div>
+<div id="ref-zou2005regularization">
+<p>Zou, Hui, and Trevor Hastie. 2005. “Regularization and Variable Selection via the Elastic Net.” <em>Journal of the Royal Statistical Society: Series B (Statistical Methodology)</em> 67 (2). Wiley Online Library: 301–20.</p>
+</div>
+</div>
+</div>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2018/12/20/sbglm-sparse-bayes-generalized-linear-models/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2018/12/20/sbglm-sparse-bayes-generalized-linear-models/">SBGLM: Sparse Bayes Generalized Linear Models</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'the-mblog';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-beta1/katex.min.js" integrity="sha384-O4hpKqcplNCe+jLuBVEXC10Rn1QEqAmX98lKAIFBEDxZI0a+6Z2w2n8AEtQbR4CD" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-beta1/contrib/auto-render.min.js" integrity="sha384-IiI65aU9ZYub2MY9zhtKd1H2ps7xxf+eb2YFG9lX6uRqpXCvBTOidPRCXCrQ++Uc" crossorigin="anonymous"></script>
+
+
+<script src="/js/math-code.js"></script>
+
+
+<script>
+      renderMathInElement(
+          document.body,
+          {
+              delimiters: [
+                  {left: "$$", right: "$$", display: true},
+                  {left: "\\[", right: "\\]", display: true},
+                  {left: "$", right: "$", display: false}
+              ]
+          }
+      );
+</script>
+
+
+
+</body>
+</html>
+

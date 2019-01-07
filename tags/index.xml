@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
-    <lastBuildDate>Thu, 20 Dec 2018 11:00:00 -0800</lastBuildDate>
+    <lastBuildDate>Sun, 06 Jan 2019 22:00:00 -0800</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Bayesian</title>
       <link>/tags/bayesian/</link>
-      <pubDate>Thu, 20 Dec 2018 11:00:00 -0800</pubDate>
+      <pubDate>Sun, 06 Jan 2019 22:00:00 -0800</pubDate>
       
       <guid>/tags/bayesian/</guid>
       <description></description>
@@ -103,6 +103,15 @@
     </item>
     
     <item>
+      <title>Linear Regression</title>
+      <link>/tags/linear-regression/</link>
+      <pubDate>Sun, 06 Jan 2019 22:00:00 -0800</pubDate>
+      
+      <guid>/tags/linear-regression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Mcmc</title>
       <link>/tags/mcmc/</link>
       <pubDate>Sat, 08 Dec 2018 19:30:11 -0800</pubDate>
@@ -150,7 +159,7 @@
     <item>
       <title>Sparse</title>
       <link>/tags/sparse/</link>
-      <pubDate>Thu, 20 Dec 2018 11:00:00 -0800</pubDate>
+      <pubDate>Sun, 06 Jan 2019 22:00:00 -0800</pubDate>
       
       <guid>/tags/sparse/</guid>
       <description></description>
