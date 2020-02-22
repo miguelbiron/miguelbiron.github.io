@@ -1,19 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on The MBLog</title>
+    <title>Tags on Miguel Biron-Lattes</title>
     <link>/tags/</link>
-    <description>Recent content in Tags on The MBLog</description>
+    <description>Recent content in Tags on Miguel Biron-Lattes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Sun, 06 Jan 2019 22:00:00 -0800</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Bayesian</title>
+      <title>bayesian</title>
       <link>/tags/bayesian/</link>
       <pubDate>Sun, 06 Jan 2019 22:00:00 -0800</pubDate>
       
@@ -22,88 +21,7 @@
     </item>
     
     <item>
-      <title>Bbvi</title>
-      <link>/tags/bbvi/</link>
-      <pubDate>Sun, 09 Dec 2018 19:18:00 -0800</pubDate>
-      
-      <guid>/tags/bbvi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Credit Risk</title>
-      <link>/tags/credit-risk/</link>
-      <pubDate>Sat, 08 Dec 2018 19:30:11 -0800</pubDate>
-      
-      <guid>/tags/credit-risk/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Elasticnet</title>
-      <link>/tags/elasticnet/</link>
-      <pubDate>Sun, 09 Dec 2018 19:18:00 -0800</pubDate>
-      
-      <guid>/tags/elasticnet/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Factor Analysis</title>
-      <link>/tags/factor-analysis/</link>
-      <pubDate>Thu, 20 Dec 2018 11:00:00 -0800</pubDate>
-      
-      <guid>/tags/factor-analysis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Finance</title>
-      <link>/tags/finance/</link>
-      <pubDate>Sat, 08 Dec 2018 19:30:11 -0800</pubDate>
-      
-      <guid>/tags/finance/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Fourier Series</title>
-      <link>/tags/fourier-series/</link>
-      <pubDate>Fri, 09 Mar 2018 15:05:00 -0300</pubDate>
-      
-      <guid>/tags/fourier-series/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Gibbs Sampler</title>
-      <link>/tags/gibbs-sampler/</link>
-      <pubDate>Sat, 08 Dec 2018 19:30:11 -0800</pubDate>
-      
-      <guid>/tags/gibbs-sampler/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Javascript</title>
-      <link>/tags/javascript/</link>
-      <pubDate>Sat, 17 Feb 2018 10:08:00 -0300</pubDate>
-      
-      <guid>/tags/javascript/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Linear Programming</title>
-      <link>/tags/linear-programming/</link>
-      <pubDate>Sat, 17 Feb 2018 10:08:00 -0300</pubDate>
-      
-      <guid>/tags/linear-programming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Linear Regression</title>
+      <title>linear regression</title>
       <link>/tags/linear-regression/</link>
       <pubDate>Sun, 06 Jan 2019 22:00:00 -0800</pubDate>
       
@@ -112,16 +30,25 @@
     </item>
     
     <item>
-      <title>Mcmc</title>
-      <link>/tags/mcmc/</link>
-      <pubDate>Sat, 08 Dec 2018 19:30:11 -0800</pubDate>
+      <title>sparse</title>
+      <link>/tags/sparse/</link>
+      <pubDate>Sun, 06 Jan 2019 22:00:00 -0800</pubDate>
       
-      <guid>/tags/mcmc/</guid>
+      <guid>/tags/sparse/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Nonparametric Bayes</title>
+      <title>factor analysis</title>
+      <link>/tags/factor-analysis/</link>
+      <pubDate>Thu, 20 Dec 2018 11:00:00 -0800</pubDate>
+      
+      <guid>/tags/factor-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nonparametric bayes</title>
       <link>/tags/nonparametric-bayes/</link>
       <pubDate>Thu, 20 Dec 2018 11:00:00 -0800</pubDate>
       
@@ -130,7 +57,7 @@
     </item>
     
     <item>
-      <title>Nsfa</title>
+      <title>nsfa</title>
       <link>/tags/nsfa/</link>
       <pubDate>Thu, 20 Dec 2018 11:00:00 -0800</pubDate>
       
@@ -139,11 +66,65 @@
     </item>
     
     <item>
-      <title>Qualifying Course</title>
+      <title>bbvi</title>
+      <link>/tags/bbvi/</link>
+      <pubDate>Sun, 09 Dec 2018 19:18:00 -0800</pubDate>
+      
+      <guid>/tags/bbvi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>elasticnet</title>
+      <link>/tags/elasticnet/</link>
+      <pubDate>Sun, 09 Dec 2018 19:18:00 -0800</pubDate>
+      
+      <guid>/tags/elasticnet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>qualifying course</title>
       <link>/tags/qualifying-course/</link>
       <pubDate>Sun, 09 Dec 2018 19:18:00 -0800</pubDate>
       
       <guid>/tags/qualifying-course/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>credit risk</title>
+      <link>/tags/credit-risk/</link>
+      <pubDate>Sat, 08 Dec 2018 19:30:11 -0800</pubDate>
+      
+      <guid>/tags/credit-risk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>finance</title>
+      <link>/tags/finance/</link>
+      <pubDate>Sat, 08 Dec 2018 19:30:11 -0800</pubDate>
+      
+      <guid>/tags/finance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gibbs sampler</title>
+      <link>/tags/gibbs-sampler/</link>
+      <pubDate>Sat, 08 Dec 2018 19:30:11 -0800</pubDate>
+      
+      <guid>/tags/gibbs-sampler/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mcmc</title>
+      <link>/tags/mcmc/</link>
+      <pubDate>Sat, 08 Dec 2018 19:30:11 -0800</pubDate>
+      
+      <guid>/tags/mcmc/</guid>
       <description></description>
     </item>
     
@@ -157,20 +138,38 @@
     </item>
     
     <item>
-      <title>Sparse</title>
-      <link>/tags/sparse/</link>
-      <pubDate>Sun, 06 Jan 2019 22:00:00 -0800</pubDate>
+      <title>Fourier series</title>
+      <link>/tags/fourier-series/</link>
+      <pubDate>Fri, 09 Mar 2018 15:05:00 -0300</pubDate>
       
-      <guid>/tags/sparse/</guid>
+      <guid>/tags/fourier-series/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Visualization</title>
+      <title>visualization</title>
       <link>/tags/visualization/</link>
       <pubDate>Fri, 09 Mar 2018 15:05:00 -0300</pubDate>
       
       <guid>/tags/visualization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>javascript</title>
+      <link>/tags/javascript/</link>
+      <pubDate>Sat, 17 Feb 2018 10:08:00 -0300</pubDate>
+      
+      <guid>/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linear programming</title>
+      <link>/tags/linear-programming/</link>
+      <pubDate>Sat, 17 Feb 2018 10:08:00 -0300</pubDate>
+      
+      <guid>/tags/linear-programming/</guid>
       <description></description>
     </item>
     

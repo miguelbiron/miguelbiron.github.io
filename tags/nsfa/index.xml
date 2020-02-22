@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Nsfa on The MBLog</title>
+    <title>nsfa on Miguel Biron-Lattes</title>
     <link>/tags/nsfa/</link>
-    <description>Recent content in Nsfa on The MBLog</description>
+    <description>Recent content in nsfa on Miguel Biron-Lattes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Thu, 20 Dec 2018 11:00:00 -0800</lastBuildDate>
     
 	<atom:link href="/tags/nsfa/index.xml" rel="self" type="application/rss+xml" />
@@ -14,11 +13,11 @@
     
     <item>
       <title>SBGLM: Sparse Bayes Generalized Linear Models</title>
-      <link>/2018/12/20/sbglm-sparse-bayes-generalized-linear-models/</link>
+      <link>/post/2018-12-20-sbglm/</link>
       <pubDate>Thu, 20 Dec 2018 11:00:00 -0800</pubDate>
       
-      <guid>/2018/12/20/sbglm-sparse-bayes-generalized-linear-models/</guid>
-      <description>Hey! I’ve just released a package on Github called SBGLM, which stands for Sparse Bayes Generalized Linear Models. The purpose of this package is mainly a way to store a lot of code that I have rotting in my laptop, which I think is relevant and useful. The models will follow the Bayesian tradition of the “spike-and-slab” prior for sparsity (Mitchell and Beauchamp 1988), so do not expect to see the so called “Bayesian Lasso” here because it doesn’t work.</description>
+      <guid>/post/2018-12-20-sbglm/</guid>
+      <description>Hey! I’ve just released a package on Github called SBGLM, which stands for Sparse Bayes Generalized Linear Models.</description>
     </item>
     
   </channel>

@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Linear Regression on The MBLog</title>
+    <title>linear regression on Miguel Biron-Lattes</title>
     <link>/tags/linear-regression/</link>
-    <description>Recent content in Linear Regression on The MBLog</description>
+    <description>Recent content in linear regression on Miguel Biron-Lattes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Sun, 06 Jan 2019 22:00:00 -0800</lastBuildDate>
     
 	<atom:link href="/tags/linear-regression/index.xml" rel="self" type="application/rss+xml" />
@@ -14,13 +13,12 @@
     
     <item>
       <title>New member in SBGLM: sparse linear regression</title>
-      <link>/2019/01/06/new-member-in-sbglm-sparse-linear-regression/</link>
+      <link>/post/2019-01-06-new-sblm-in-sbglm/</link>
       <pubDate>Sun, 06 Jan 2019 22:00:00 -0800</pubDate>
       
-      <guid>/2019/01/06/new-member-in-sbglm-sparse-linear-regression/</guid>
+      <guid>/post/2019-01-06-new-sblm-in-sbglm/</guid>
       <description>Hi all!
-This blog is about the latest addition to my package SBGLM: a sparse linear regression. This was actually the first model I intended to put in the package, but I didn’t had time to finish implementing it during last term.
-Description of the model This is a very basic Bayesian linear regression model, with a minor twist that lets us impose sparsity in the effects: $$ \begin{aligned} \sigma_b^2 &amp;amp;\sim \text{Inv-Gamma}(s_b, r_b) \\ \sigma_e^2 &amp;amp;\sim \text{Inv-Gamma}(s_e, r_e) \\ \pi &amp;amp;\sim \text{Beta}(s_1, s_2) \\ \beta_k|\sigma_b^2 &amp;amp;\overset{iid}{\sim} \mathcal{N}(0, \sigma_b^2) \\ z_k|\pi &amp;amp;\overset{iid}{\sim} \text{Bernoulli}(\pi) \\ y|\beta, z, X, \sigma_e^2 &amp;amp;\sim \mathcal{N}(X(\beta \odot z), \sigma_e^2 I_N) \end{aligned} $$</description>
+This blog is about the latest addition to my package SBGLM: a sparse linear regression.</description>
     </item>
     
   </channel>

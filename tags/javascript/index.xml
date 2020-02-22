@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Javascript on The MBLog</title>
+    <title>javascript on Miguel Biron-Lattes</title>
     <link>/tags/javascript/</link>
-    <description>Recent content in Javascript on The MBLog</description>
+    <description>Recent content in javascript on Miguel Biron-Lattes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Sat, 17 Feb 2018 10:08:00 -0300</lastBuildDate>
     
 	<atom:link href="/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
@@ -14,12 +13,11 @@
     
     <item>
       <title>Demo for simple payments with linear programming</title>
-      <link>/2018/02/17/demo-for-simple-payments-with-linear-programming/</link>
+      <link>/post/2018-02-17-demo-simple-payments/</link>
       <pubDate>Sat, 17 Feb 2018 10:08:00 -0300</pubDate>
       
-      <guid>/2018/02/17/demo-for-simple-payments-with-linear-programming/</guid>
-      <description>I built a webapp that implements the solution for simplifying payments described in my previous post. It is written in Javascript and uses the LALOLib library for linear algebra and solving the linear program.
-Input data Using these input forms, you will enter the net amount owed by/to each participant: a positive number means that person is owed money, and a negative number means that person needs to pay other people (this is the $b$ vector in the mathematical formulation).</description>
+      <guid>/post/2018-02-17-demo-simple-payments/</guid>
+      <description>I built a webapp that implements the solution for simplifying payments described in my previous post.</description>
     </item>
     
   </channel>

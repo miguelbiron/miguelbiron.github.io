@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mcmc on The MBLog</title>
+    <title>mcmc on Miguel Biron-Lattes</title>
     <link>/tags/mcmc/</link>
-    <description>Recent content in Mcmc on The MBLog</description>
+    <description>Recent content in mcmc on Miguel Biron-Lattes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Sat, 08 Dec 2018 19:30:11 -0800</lastBuildDate>
     
 	<atom:link href="/tags/mcmc/index.xml" rel="self" type="application/rss+xml" />
@@ -14,11 +13,11 @@
     
     <item>
       <title>BIDC: Bayesian Inference for Default Correlations</title>
-      <link>/2018/12/08/bidc-bayesian-inference-for-default-correlations/</link>
+      <link>/post/2018-12-07-bidc-r-package/</link>
       <pubDate>Sat, 08 Dec 2018 19:30:11 -0800</pubDate>
       
-      <guid>/2018/12/08/bidc-bayesian-inference-for-default-correlations/</guid>
-      <description>I just released a package on Github called BIDC, which stands for Bayesian Inference for Default Correlations. I started working on this together with my colleague Victor Medina back when I was a financial stability analyst at the Superintendency of Banks and Financial Institutions in Chile. In fact, you can see the slides from our presentation at the 2017 version of SBIF conference here (Biron and Medina 2017). The difference is that, instead of Stan, the method available in BIDC uses a Metropolis-Hastings-within-Gibbs MCMC sampler (Gilks 1996) written entirely in base R, that runs much faster.</description>
+      <guid>/post/2018-12-07-bidc-r-package/</guid>
+      <description>I just released a package on Github called BIDC, which stands for Bayesian Inference for Default Correlations.</description>
     </item>
     
   </channel>

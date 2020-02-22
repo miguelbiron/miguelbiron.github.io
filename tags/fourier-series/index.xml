@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Fourier Series on The MBLog</title>
+    <title>Fourier series on Miguel Biron-Lattes</title>
     <link>/tags/fourier-series/</link>
-    <description>Recent content in Fourier Series on The MBLog</description>
+    <description>Recent content in Fourier series on Miguel Biron-Lattes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Fri, 09 Mar 2018 15:05:00 -0300</lastBuildDate>
     
 	<atom:link href="/tags/fourier-series/index.xml" rel="self" type="application/rss+xml" />
@@ -14,11 +13,11 @@
     
     <item>
       <title>Visualizing Fourier series in 2D and 3D</title>
-      <link>/2018/03/09/visualizing-fourier-series-in-2d-and-3d/</link>
+      <link>/post/2018-03-05-visualizing-fourier-series-2d-3d/</link>
       <pubDate>Fri, 09 Mar 2018 15:05:00 -0300</pubDate>
       
-      <guid>/2018/03/09/visualizing-fourier-series-in-2d-and-3d/</guid>
-      <description>In this post, I will give a brief description of real valued Fourier series in higher dimensions, with some neat plots. I started reading about Fourier series because in the 1D case they are useful for extracting periodic patterns from time series data. However, I ended up fascinated by the pretty pictures one could get by plotting random 2D series, or by the periodic videos made by “walking” along a 3D space “painted”&amp;quot; with a Fourier series.</description>
+      <guid>/post/2018-03-05-visualizing-fourier-series-2d-3d/</guid>
+      <description>In this post, I will give a brief description of real valued Fourier series in higher dimensions, with some neat plots.</description>
     </item>
     
   </channel>

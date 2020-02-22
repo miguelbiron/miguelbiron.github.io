@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sparse on The MBLog</title>
+    <title>sparse on Miguel Biron-Lattes</title>
     <link>/tags/sparse/</link>
-    <description>Recent content in Sparse on The MBLog</description>
+    <description>Recent content in sparse on Miguel Biron-Lattes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Sun, 06 Jan 2019 22:00:00 -0800</lastBuildDate>
     
 	<atom:link href="/tags/sparse/index.xml" rel="self" type="application/rss+xml" />
@@ -14,22 +13,21 @@
     
     <item>
       <title>New member in SBGLM: sparse linear regression</title>
-      <link>/2019/01/06/new-member-in-sbglm-sparse-linear-regression/</link>
+      <link>/post/2019-01-06-new-sblm-in-sbglm/</link>
       <pubDate>Sun, 06 Jan 2019 22:00:00 -0800</pubDate>
       
-      <guid>/2019/01/06/new-member-in-sbglm-sparse-linear-regression/</guid>
+      <guid>/post/2019-01-06-new-sblm-in-sbglm/</guid>
       <description>Hi all!
-This blog is about the latest addition to my package SBGLM: a sparse linear regression. This was actually the first model I intended to put in the package, but I didn’t had time to finish implementing it during last term.
-Description of the model This is a very basic Bayesian linear regression model, with a minor twist that lets us impose sparsity in the effects: $$ \begin{aligned} \sigma_b^2 &amp;amp;\sim \text{Inv-Gamma}(s_b, r_b) \\ \sigma_e^2 &amp;amp;\sim \text{Inv-Gamma}(s_e, r_e) \\ \pi &amp;amp;\sim \text{Beta}(s_1, s_2) \\ \beta_k|\sigma_b^2 &amp;amp;\overset{iid}{\sim} \mathcal{N}(0, \sigma_b^2) \\ z_k|\pi &amp;amp;\overset{iid}{\sim} \text{Bernoulli}(\pi) \\ y|\beta, z, X, \sigma_e^2 &amp;amp;\sim \mathcal{N}(X(\beta \odot z), \sigma_e^2 I_N) \end{aligned} $$</description>
+This blog is about the latest addition to my package SBGLM: a sparse linear regression.</description>
     </item>
     
     <item>
       <title>SBGLM: Sparse Bayes Generalized Linear Models</title>
-      <link>/2018/12/20/sbglm-sparse-bayes-generalized-linear-models/</link>
+      <link>/post/2018-12-20-sbglm/</link>
       <pubDate>Thu, 20 Dec 2018 11:00:00 -0800</pubDate>
       
-      <guid>/2018/12/20/sbglm-sparse-bayes-generalized-linear-models/</guid>
-      <description>Hey! I’ve just released a package on Github called SBGLM, which stands for Sparse Bayes Generalized Linear Models. The purpose of this package is mainly a way to store a lot of code that I have rotting in my laptop, which I think is relevant and useful. The models will follow the Bayesian tradition of the “spike-and-slab” prior for sparsity (Mitchell and Beauchamp 1988), so do not expect to see the so called “Bayesian Lasso” here because it doesn’t work.</description>
+      <guid>/post/2018-12-20-sbglm/</guid>
+      <description>Hey! I’ve just released a package on Github called SBGLM, which stands for Sparse Bayes Generalized Linear Models.</description>
     </item>
     
   </channel>

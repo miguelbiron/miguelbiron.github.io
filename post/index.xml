@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on The MBLog</title>
+    <title>Posts on Miguel Biron-Lattes</title>
     <link>/post/</link>
-    <description>Recent content in Posts on The MBLog</description>
+    <description>Recent content in Posts on Miguel Biron-Lattes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Sun, 06 Jan 2019 22:00:00 -0800</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
@@ -14,69 +13,66 @@
     
     <item>
       <title>New member in SBGLM: sparse linear regression</title>
-      <link>/2019/01/06/new-member-in-sbglm-sparse-linear-regression/</link>
+      <link>/post/2019-01-06-new-sblm-in-sbglm/</link>
       <pubDate>Sun, 06 Jan 2019 22:00:00 -0800</pubDate>
       
-      <guid>/2019/01/06/new-member-in-sbglm-sparse-linear-regression/</guid>
+      <guid>/post/2019-01-06-new-sblm-in-sbglm/</guid>
       <description>Hi all!
-This blog is about the latest addition to my package SBGLM: a sparse linear regression. This was actually the first model I intended to put in the package, but I didn’t had time to finish implementing it during last term.
-Description of the model This is a very basic Bayesian linear regression model, with a minor twist that lets us impose sparsity in the effects: $$ \begin{aligned} \sigma_b^2 &amp;amp;\sim \text{Inv-Gamma}(s_b, r_b) \\ \sigma_e^2 &amp;amp;\sim \text{Inv-Gamma}(s_e, r_e) \\ \pi &amp;amp;\sim \text{Beta}(s_1, s_2) \\ \beta_k|\sigma_b^2 &amp;amp;\overset{iid}{\sim} \mathcal{N}(0, \sigma_b^2) \\ z_k|\pi &amp;amp;\overset{iid}{\sim} \text{Bernoulli}(\pi) \\ y|\beta, z, X, \sigma_e^2 &amp;amp;\sim \mathcal{N}(X(\beta \odot z), \sigma_e^2 I_N) \end{aligned} $$</description>
+This blog is about the latest addition to my package SBGLM: a sparse linear regression.</description>
     </item>
     
     <item>
       <title>SBGLM: Sparse Bayes Generalized Linear Models</title>
-      <link>/2018/12/20/sbglm-sparse-bayes-generalized-linear-models/</link>
+      <link>/post/2018-12-20-sbglm/</link>
       <pubDate>Thu, 20 Dec 2018 11:00:00 -0800</pubDate>
       
-      <guid>/2018/12/20/sbglm-sparse-bayes-generalized-linear-models/</guid>
-      <description>Hey! I’ve just released a package on Github called SBGLM, which stands for Sparse Bayes Generalized Linear Models. The purpose of this package is mainly a way to store a lot of code that I have rotting in my laptop, which I think is relevant and useful. The models will follow the Bayesian tradition of the “spike-and-slab” prior for sparsity (Mitchell and Beauchamp 1988), so do not expect to see the so called “Bayesian Lasso” here because it doesn’t work.</description>
+      <guid>/post/2018-12-20-sbglm/</guid>
+      <description>Hey! I’ve just released a package on Github called SBGLM, which stands for Sparse Bayes Generalized Linear Models.</description>
     </item>
     
     <item>
       <title>PhD Qualifying Course Reports: Term 1</title>
-      <link>/2018/12/09/phd-qualifying-course-reports-term-1/</link>
+      <link>/post/2018-12-08-qualifying-course-reports-term-1/</link>
       <pubDate>Sun, 09 Dec 2018 19:18:00 -0800</pubDate>
       
-      <guid>/2018/12/09/phd-qualifying-course-reports-term-1/</guid>
-      <description>It’s crazy how fast this first term went by! But I loved it. The Department of Statistics at UBC is insanely awesome. The people are the best, from students to faculty and staff. The academic environment is very stimulating, especially in my area of interest, with lots of active reading groups and frequent seminars related to Bayesian Statistics, Probabilistic Models and Statistical Learning. We even had the privilege of attending a talk by the expert in Hamiltonian Monte Carlo Michael Betancourt.</description>
+      <guid>/post/2018-12-08-qualifying-course-reports-term-1/</guid>
+      <description>It’s crazy how fast this first term went by! But I loved it.</description>
     </item>
     
     <item>
       <title>BIDC: Bayesian Inference for Default Correlations</title>
-      <link>/2018/12/08/bidc-bayesian-inference-for-default-correlations/</link>
+      <link>/post/2018-12-07-bidc-r-package/</link>
       <pubDate>Sat, 08 Dec 2018 19:30:11 -0800</pubDate>
       
-      <guid>/2018/12/08/bidc-bayesian-inference-for-default-correlations/</guid>
-      <description>I just released a package on Github called BIDC, which stands for Bayesian Inference for Default Correlations. I started working on this together with my colleague Victor Medina back when I was a financial stability analyst at the Superintendency of Banks and Financial Institutions in Chile. In fact, you can see the slides from our presentation at the 2017 version of SBIF conference here (Biron and Medina 2017). The difference is that, instead of Stan, the method available in BIDC uses a Metropolis-Hastings-within-Gibbs MCMC sampler (Gilks 1996) written entirely in base R, that runs much faster.</description>
+      <guid>/post/2018-12-07-bidc-r-package/</guid>
+      <description>I just released a package on Github called BIDC, which stands for Bayesian Inference for Default Correlations.</description>
     </item>
     
     <item>
       <title>Visualizing Fourier series in 2D and 3D</title>
-      <link>/2018/03/09/visualizing-fourier-series-in-2d-and-3d/</link>
+      <link>/post/2018-03-05-visualizing-fourier-series-2d-3d/</link>
       <pubDate>Fri, 09 Mar 2018 15:05:00 -0300</pubDate>
       
-      <guid>/2018/03/09/visualizing-fourier-series-in-2d-and-3d/</guid>
-      <description>In this post, I will give a brief description of real valued Fourier series in higher dimensions, with some neat plots. I started reading about Fourier series because in the 1D case they are useful for extracting periodic patterns from time series data. However, I ended up fascinated by the pretty pictures one could get by plotting random 2D series, or by the periodic videos made by “walking” along a 3D space “painted”&amp;quot; with a Fourier series.</description>
+      <guid>/post/2018-03-05-visualizing-fourier-series-2d-3d/</guid>
+      <description>In this post, I will give a brief description of real valued Fourier series in higher dimensions, with some neat plots.</description>
     </item>
     
     <item>
       <title>Demo for simple payments with linear programming</title>
-      <link>/2018/02/17/demo-for-simple-payments-with-linear-programming/</link>
+      <link>/post/2018-02-17-demo-simple-payments/</link>
       <pubDate>Sat, 17 Feb 2018 10:08:00 -0300</pubDate>
       
-      <guid>/2018/02/17/demo-for-simple-payments-with-linear-programming/</guid>
-      <description>I built a webapp that implements the solution for simplifying payments described in my previous post. It is written in Javascript and uses the LALOLib library for linear algebra and solving the linear program.
-Input data Using these input forms, you will enter the net amount owed by/to each participant: a positive number means that person is owed money, and a negative number means that person needs to pay other people (this is the $b$ vector in the mathematical formulation).</description>
+      <guid>/post/2018-02-17-demo-simple-payments/</guid>
+      <description>I built a webapp that implements the solution for simplifying payments described in my previous post.</description>
     </item>
     
     <item>
       <title>Simplifying payments with linear programming</title>
-      <link>/2018/02/09/simplifying-payments-with-linear-programming/</link>
+      <link>/post/2018-02-09-simplifying-pmts-with-lp/</link>
       <pubDate>Fri, 09 Feb 2018 17:40:00 -0300</pubDate>
       
-      <guid>/2018/02/09/simplifying-payments-with-linear-programming/</guid>
-      <description>Update: I have built a demo webapp implementing the solution presented here. You should try it!
-Imagine you have a group of $n$ friends and that you regularly go out for drinks with them (say, a couple of times a week). At each of these meetings, a different member of the group pays for the bill, but you keep track of who consumed what (by using one of these popular apps, for example).</description>
+      <guid>/post/2018-02-09-simplifying-pmts-with-lp/</guid>
+      <description>Update: I have built a demo webapp implementing the solution presented here.</description>
     </item>
     
   </channel>

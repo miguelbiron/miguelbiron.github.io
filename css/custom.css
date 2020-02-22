@@ -1,0 +1,8 @@
+p {
+  text-align: justify;
+}
+
+pre > code {
+    font-size: 0.9em;
+    line-height: 1.3em;
+}

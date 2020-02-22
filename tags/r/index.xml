@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>R on The MBLog</title>
+    <title>R on Miguel Biron-Lattes</title>
     <link>/tags/r/</link>
-    <description>Recent content in R on The MBLog</description>
+    <description>Recent content in R on Miguel Biron-Lattes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Sat, 08 Dec 2018 19:30:11 -0800</lastBuildDate>
     
 	<atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
@@ -14,30 +13,29 @@
     
     <item>
       <title>BIDC: Bayesian Inference for Default Correlations</title>
-      <link>/2018/12/08/bidc-bayesian-inference-for-default-correlations/</link>
+      <link>/post/2018-12-07-bidc-r-package/</link>
       <pubDate>Sat, 08 Dec 2018 19:30:11 -0800</pubDate>
       
-      <guid>/2018/12/08/bidc-bayesian-inference-for-default-correlations/</guid>
-      <description>I just released a package on Github called BIDC, which stands for Bayesian Inference for Default Correlations. I started working on this together with my colleague Victor Medina back when I was a financial stability analyst at the Superintendency of Banks and Financial Institutions in Chile. In fact, you can see the slides from our presentation at the 2017 version of SBIF conference here (Biron and Medina 2017). The difference is that, instead of Stan, the method available in BIDC uses a Metropolis-Hastings-within-Gibbs MCMC sampler (Gilks 1996) written entirely in base R, that runs much faster.</description>
+      <guid>/post/2018-12-07-bidc-r-package/</guid>
+      <description>I just released a package on Github called BIDC, which stands for Bayesian Inference for Default Correlations.</description>
     </item>
     
     <item>
       <title>Visualizing Fourier series in 2D and 3D</title>
-      <link>/2018/03/09/visualizing-fourier-series-in-2d-and-3d/</link>
+      <link>/post/2018-03-05-visualizing-fourier-series-2d-3d/</link>
       <pubDate>Fri, 09 Mar 2018 15:05:00 -0300</pubDate>
       
-      <guid>/2018/03/09/visualizing-fourier-series-in-2d-and-3d/</guid>
-      <description>In this post, I will give a brief description of real valued Fourier series in higher dimensions, with some neat plots. I started reading about Fourier series because in the 1D case they are useful for extracting periodic patterns from time series data. However, I ended up fascinated by the pretty pictures one could get by plotting random 2D series, or by the periodic videos made by “walking” along a 3D space “painted”&amp;quot; with a Fourier series.</description>
+      <guid>/post/2018-03-05-visualizing-fourier-series-2d-3d/</guid>
+      <description>In this post, I will give a brief description of real valued Fourier series in higher dimensions, with some neat plots.</description>
     </item>
     
     <item>
       <title>Simplifying payments with linear programming</title>
-      <link>/2018/02/09/simplifying-payments-with-linear-programming/</link>
+      <link>/post/2018-02-09-simplifying-pmts-with-lp/</link>
       <pubDate>Fri, 09 Feb 2018 17:40:00 -0300</pubDate>
       
-      <guid>/2018/02/09/simplifying-payments-with-linear-programming/</guid>
-      <description>Update: I have built a demo webapp implementing the solution presented here. You should try it!
-Imagine you have a group of $n$ friends and that you regularly go out for drinks with them (say, a couple of times a week). At each of these meetings, a different member of the group pays for the bill, but you keep track of who consumed what (by using one of these popular apps, for example).</description>
+      <guid>/post/2018-02-09-simplifying-pmts-with-lp/</guid>
+      <description>Update: I have built a demo webapp implementing the solution presented here.</description>
     </item>
     
   </channel>
