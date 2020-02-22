@@ -3,13 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/archives/</loc>
-    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/</loc>
-    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+    <lastmod>2019-01-06T22:00:00-08:00</lastmod>
   </url>
   
   <url>
@@ -148,7 +143,7 @@
   </url>
   
   <url>
-    <loc>/about/</loc>
+    <loc>/archives/</loc>
   </url>
   
 </urlset>

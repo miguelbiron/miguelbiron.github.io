@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Miguel Biron-Lattes</title>
+    <title>About me on Miguel Biron-Lattes</title>
     <link>/</link>
-    <description>Recent content on Miguel Biron-Lattes</description>
+    <description>Recent content in About me on Miguel Biron-Lattes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 06 Jan 2019 22:00:00 -0800</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title></title>
-      <link>/archives/</link>
-      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/archives/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>New member in SBGLM: sparse linear regression</title>
@@ -85,12 +76,12 @@ This blog is about the latest addition to my package SBGLM: a sparse linear regr
     </item>
     
     <item>
-      <title>About me</title>
-      <link>/about/</link>
+      <title></title>
+      <link>/archives/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/about/</guid>
-      <description>My wife and I enjoying a sunny day at Viña del Mar, Chile</description>
+      <guid>/archives/</guid>
+      <description></description>
     </item>
     
   </channel>

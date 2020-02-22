@@ -27,8 +27,6 @@
   
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
   
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/yaml.min.js"></script>
-  
   <script>hljs.initHighlightingOnLoad();</script>
   
 
@@ -52,7 +50,7 @@
 </header>
   <div class="nav-menu">
   
-    <a class="color-link nav-link" href="/about/">About</a>
+    <a class="color-link nav-link" href="/post/">Blog</a>
   
     <a class="color-link nav-link" href="/tags/">Tags</a>
   
@@ -63,6 +61,12 @@
 <footer class="footer">
 	<div class="social-icons">
         
+    <a class="social-icon" href="mailto:miguel.biron@stat.ubc.ca" target="_blank" rel="noopener" title="Email">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path d="M25.2794292,5.59128519 L14,16.8707144 L2.72057081,5.59128519 C3.06733103,5.30237414 3.51336915,5.12857603 4,5.12857603 L24,5.12857603 C24.4866308,5.12857603 24.932669,5.30237414 25.2794292,5.59128519 Z M25.9956978,6.99633695 C25.998551,7.04004843 26,7.08414302 26,7.12857603 L26,20.871424 C26,21.0798433 25.9681197,21.2808166 25.9089697,21.4697335 L18.7156355,14.2763993 L25.9956978,6.99633695 Z M24.9498374,22.6319215 C24.6672737,22.7846939 24.3437653,22.871424 24,22.871424 L4,22.871424 C3.5268522,22.871424 3.09207889,22.7071233 2.74962118,22.432463 L10.0950247,15.0870594 L13.9848068,18.9768415 L14.1878486,18.7737996 L14.2030419,18.7889929 L17.6549753,15.3370594 L24.9498374,22.6319215 Z M2.00810114,21.0526627 C2.00273908,20.9929669 2,20.9325153 2,20.871424 L2,7.12857603 C2,7.08414302 2.00144896,7.04004843 2.00430222,6.99633695 L9.03436454,14.0263993 L2.00810114,21.0526627 Z"></path>
+        </svg>
+    </a>
+    
 
     
 
@@ -171,7 +175,8 @@
 <p>The way of working with Gabriela was very different than with Trevor. She actually gave me a very specific list of questions I had to answer, as opposed to the more open-ended way in which the first report went. In any case, having a list of questions reduces anxiety in relation to what is expected from the one’s work, so I was fine with it.</p>
 <p>In my opinion, the most fun I had with it was giving a proof of the fact that, in the <code>$p&gt;n$</code> situation (i.e., more covariates than observations), the Lasso can select at most <code>$n$</code> covariates, while showing that the Elastic Net does not suffer from this issue. It was interesting because it forced me to learn about KKT conditions for subgradients (I have never taken a course on convex optimization), while at the same time refreshing my linear algebra. I also remember being greatly surprised when I found out that orthonormal design matrices had analytic solutions for the Elastic Net. So, even though this was not part of the questions, I gave a proof of the solution, which is in fact univariate soft-thresholding.</p>
 <p>On the other hand, I’d say that the most difficult part of this report was finding a way to give a meaningful critique to a 13 years old, seminal work. Nevertheless, as a Bayesian, the most troubling aspect of this paper is that it does not give any advice on how to obtain uncertainty measures of the estimated parameters, so that the user is forced to use a bootstrap strategy. This can be prohibitive for large datasets, since for each bootstrap run, one has to perform cross-validation to find the optimal parameters. In contrast, the “spike-and-slab” prior, the gold standard of Bayesian variable selection which dates back to <span class="citation">Mitchell and Beauchamp (1988)</span>, can yield exact post selection inference effortlessly.</p>
-<p>In fact, after handing in the report, I went and implemented a spike-and-slab model for a linear regression. I used the more modern implementation, which uses an auxiliary binary vector <code>$z$</code> with entries in <code>$\{0, 1\}$</code>, so that the model becomes: <span class="math display">\[
+<p>In fact, after handing in the report, I went and implemented a spike-and-slab model for a linear regression. I used the more modern implementation, which uses an auxiliary binary vector <code>$z$</code> with entries in <code>$\{0, 1\}$</code>, so that the model becomes:
+<span class="math display">\[
 \begin{aligned}
 \sigma_b^2 &amp;\sim \text{Inv-Gamma}(e, f) \\
 \sigma_e^2 &amp;\sim \text{Inv-Gamma}(g, h) \\
@@ -188,7 +193,8 @@ y_i|z, \beta, \sigma_e &amp;\overset{ind}{\sim} \mathcal{N}(x_i^T(\beta \odot z)
 <p><a href="/docs/STAT548_report_3_NSFA.pdf"><em>Download report 3.</em></a></p>
 <p>The fact that I chose not to be a TA this term, and also that I had only one course, let me focus 80% of my time to the Qualifying Course. Becasue of this, I was able to get 3 papers done in the first term, something that was surprising, according to the graduate advisor and staff.</p>
 <p>Luckily, after finishing my second report, Prof. Alex Bouchard-Côté had just returned from a sabbatical. I have to say that Alex was a crucial factor in my decision to come to UBC, because he was one of the few Bayesians here, his curriculum is impressive, and his research on MCMC methods is very motivating. So I went to talk to him and offered to work on the paper by <span class="citation">Knowles and Ghahramani (2011)</span>, which he accepted. I also took the liberty of asking him permission to join his reading group, and he was very welcoming about it. I have thoroughly enjoyed every meeting (in fact, I will be presenting next week about perfect sampling).</p>
-<p>Back to paper. This work proposes the Nonparametric Sparse Factor Analysis (NSFA) model. Recall the standard construction of Factor Analysis: <span class="math display">\[
+<p>Back to paper. This work proposes the Nonparametric Sparse Factor Analysis (NSFA) model. Recall the standard construction of Factor Analysis:
+<span class="math display">\[
 Y = GX + E
 \]</span></p>
 <p>where <code>$Y$</code> is the data (a <code>$D \times N$</code> matrix), <code>$X$</code> is matrix of size <code>$K \times N$</code> containing <code>$K$</code> latent factors, <code>$G$</code> is the loading matrix of the <code>$D$</code> objects onto the <code>$K$</code> factors. In short, the NSFA uses an Indian Buffet Process (IBP) in the prior of <code>$G$</code> to allow for an unbounded number of latent factors, while at the same time imposing sparsity on the weights.</p>
@@ -273,6 +279,12 @@ Y = GX + E
         <footer class="footer-mobile">
 	<div class="social-icons">
         
+    <a class="social-icon" href="mailto:miguel.biron@stat.ubc.ca" target="_blank" rel="noopener" title="Email">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path d="M25.2794292,5.59128519 L14,16.8707144 L2.72057081,5.59128519 C3.06733103,5.30237414 3.51336915,5.12857603 4,5.12857603 L24,5.12857603 C24.4866308,5.12857603 24.932669,5.30237414 25.2794292,5.59128519 Z M25.9956978,6.99633695 C25.998551,7.04004843 26,7.08414302 26,7.12857603 L26,20.871424 C26,21.0798433 25.9681197,21.2808166 25.9089697,21.4697335 L18.7156355,14.2763993 L25.9956978,6.99633695 Z M24.9498374,22.6319215 C24.6672737,22.7846939 24.3437653,22.871424 24,22.871424 L4,22.871424 C3.5268522,22.871424 3.09207889,22.7071233 2.74962118,22.432463 L10.0950247,15.0870594 L13.9848068,18.9768415 L14.1878486,18.7737996 L14.2030419,18.7889929 L17.6549753,15.3370594 L24.9498374,22.6319215 Z M2.00810114,21.0526627 C2.00273908,20.9929669 2,20.9325153 2,20.871424 L2,7.12857603 C2,7.08414302 2.00144896,7.04004843 2.00430222,6.99633695 L9.03436454,14.0263993 L2.00810114,21.0526627 Z"></path>
+        </svg>
+    </a>
+    
 
     
 
