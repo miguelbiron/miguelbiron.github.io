@@ -146,19 +146,55 @@
     
     <div>
         <p>
-        <p>I built a webapp that implements the solution for simplifying payments described <a href="/post/2018-02-09-simplifying-pmts-with-lp/">in my previous post</a>. It is written in Javascript and uses the <a href="http://mlweb.loria.fr/lalolab/lalolib.html"><code>LALOLib</code></a> library for linear algebra and solving the linear program.</p>
-<h2 id="input-data">Input data</h2>
+        
+
+
+<p>I built a webapp that implements the solution for simplifying payments described <a href="/post/2018-02-09-simplifying-pmts-with-lp/">in my previous post</a>. It is written in Javascript and uses the <a href="http://mlweb.loria.fr/lalolab/lalolib.html"><code>LALOLib</code></a> library for linear algebra and solving the linear program.</p>
+<div id="input-data" class="section level2">
+<h2>Input data</h2>
 <p>Using these input forms, you will enter the net amount owed by/to each participant: a positive number means that person is owed money, and a negative number means that person needs to pay other people (this is the <code>$b$</code> vector in the mathematical formulation). The problem only makes sense if the sum of these values across all members is equal to 0.</p>
-<!-- raw HTML omitted -->
-<p><!-- raw HTML omitted -->Add more members<!-- raw HTML omitted --></p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+
+<div id="member-balance-list">
+  <div class="member-balance">
+      <input type="text" name="member" value="Mike">
+      <input type="text" name="balance" value="-500">
+  </div>
+  <div class="member-balance">
+      <input type="text" name="member" value="John">
+      <input type="text" name="balance" value="-100">
+  </div>
+  <div class="member-balance">
+      <input type="text" name="member" value="Rachel">
+      <input type="text" name="balance" value="600">
+  </div>
+</div>
+
+<button onclick="add_member_fields()">Add more members</button>
+
+<div>
+  <p>When you are done adding data, click here:</p>
+  <button onclick="parse_inputs()">Read and check inputs</button>
+</div>
+
+<div id="parse-inputs-diagnostics">
+  <p id="members-summary"></p>
+  <p id="balances-check"></p>
+</div>
+
+<div>
+  <button onclick="settle_debts()">Solve!</button>
+</div>
+
+<p id="solve-diagnostics"></p>
+
+<h2 id="problem-solved"></h2>
+
+<div id="results-table"></div>
+
+<script src="/js/lalolib.js"></script>
+<script src="/post/2018-02-17-demo-simple-payments_files/js/scripts.js"></script>
+
+</div>
 
         </p>
     </div>
