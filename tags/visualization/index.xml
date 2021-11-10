@@ -6,11 +6,7 @@
     <description>Recent content in visualization on Miguel Biron-Lattes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 Mar 2018 15:05:00 -0300</lastBuildDate>
-    
-	<atom:link href="/tags/visualization/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 09 Mar 2018 15:05:00 -0300</lastBuildDate><atom:link href="/tags/visualization/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Visualizing Fourier series in 2D and 3D</title>
       <link>/post/2018-03-05-visualizing-fourier-series-2d-3d/</link>

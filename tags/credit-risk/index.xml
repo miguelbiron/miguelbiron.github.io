@@ -6,11 +6,7 @@
     <description>Recent content in credit risk on Miguel Biron-Lattes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Dec 2018 19:30:11 -0800</lastBuildDate>
-    
-	<atom:link href="/tags/credit-risk/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 08 Dec 2018 19:30:11 -0800</lastBuildDate><atom:link href="/tags/credit-risk/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BIDC: Bayesian Inference for Default Correlations</title>
       <link>/post/2018-12-07-bidc-r-package/</link>
