@@ -4,72 +4,58 @@
     <title>Posts on Miguel Biron-Lattes</title>
     <link>/post/</link>
     <description>Recent content in Posts on Miguel Biron-Lattes</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Jan 2019 22:00:00 -0800</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Jan 2019 22:00:00 -0800</lastBuildDate>
+    <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>New member in SBGLM: sparse linear regression</title>
       <link>/post/2019-01-06-new-sblm-in-sbglm/</link>
       <pubDate>Sun, 06 Jan 2019 22:00:00 -0800</pubDate>
-      
       <guid>/post/2019-01-06-new-sblm-in-sbglm/</guid>
-      <description>Hi all!
-This blog is about the latest addition to my package SBGLM: a sparse linear regression.</description>
+      <description>Hi all!&#xA;This blog is about the latest addition to my package SBGLM: a sparse linear regression.</description>
     </item>
-    
     <item>
       <title>SBGLM: Sparse Bayes Generalized Linear Models</title>
       <link>/post/2018-12-20-sbglm/</link>
       <pubDate>Thu, 20 Dec 2018 11:00:00 -0800</pubDate>
-      
       <guid>/post/2018-12-20-sbglm/</guid>
       <description>Hey! I’ve just released a package on Github called SBGLM, which stands for Sparse Bayes Generalized Linear Models.</description>
     </item>
-    
     <item>
       <title>PhD Qualifying Course Reports: Term 1</title>
       <link>/post/2018-12-08-qualifying-course-reports-term-1/</link>
       <pubDate>Sun, 09 Dec 2018 19:18:00 -0800</pubDate>
-      
       <guid>/post/2018-12-08-qualifying-course-reports-term-1/</guid>
       <description>It’s crazy how fast this first term went by! But I loved it.</description>
     </item>
-    
     <item>
       <title>BIDC: Bayesian Inference for Default Correlations</title>
       <link>/post/2018-12-07-bidc-r-package/</link>
       <pubDate>Sat, 08 Dec 2018 19:30:11 -0800</pubDate>
-      
       <guid>/post/2018-12-07-bidc-r-package/</guid>
       <description>I just released a package on Github called BIDC, which stands for Bayesian Inference for Default Correlations.</description>
     </item>
-    
     <item>
       <title>Visualizing Fourier series in 2D and 3D</title>
       <link>/post/2018-03-05-visualizing-fourier-series-2d-3d/</link>
       <pubDate>Fri, 09 Mar 2018 15:05:00 -0300</pubDate>
-      
       <guid>/post/2018-03-05-visualizing-fourier-series-2d-3d/</guid>
       <description>In this post, I will give a brief description of real valued Fourier series in higher dimensions, with some neat plots.</description>
     </item>
-    
     <item>
       <title>Demo for simple payments with linear programming</title>
       <link>/post/2018-02-17-demo-simple-payments/</link>
       <pubDate>Sat, 17 Feb 2018 10:08:00 -0300</pubDate>
-      
       <guid>/post/2018-02-17-demo-simple-payments/</guid>
       <description>I built a webapp that implements the solution for simplifying payments described in my previous post.</description>
     </item>
-    
     <item>
       <title>Simplifying payments with linear programming</title>
       <link>/post/2018-02-09-simplifying-pmts-with-lp/</link>
       <pubDate>Fri, 09 Feb 2018 17:40:00 -0300</pubDate>
-      
       <guid>/post/2018-02-09-simplifying-pmts-with-lp/</guid>
       <description>Update: I have built a demo webapp implementing the solution presented here.</description>
     </item>
-    
   </channel>
 </rss>

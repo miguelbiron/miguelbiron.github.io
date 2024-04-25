@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>mcmc on Miguel Biron-Lattes</title>
+    <title>Mcmc on Miguel Biron-Lattes</title>
     <link>/tags/mcmc/</link>
-    <description>Recent content in mcmc on Miguel Biron-Lattes</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Mcmc on Miguel Biron-Lattes</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Dec 2018 19:30:11 -0800</lastBuildDate><atom:link href="/tags/mcmc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Dec 2018 19:30:11 -0800</lastBuildDate>
+    <atom:link href="/tags/mcmc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BIDC: Bayesian Inference for Default Correlations</title>
       <link>/post/2018-12-07-bidc-r-package/</link>
       <pubDate>Sat, 08 Dec 2018 19:30:11 -0800</pubDate>
-      
       <guid>/post/2018-12-07-bidc-r-package/</guid>
       <description>I just released a package on Github called BIDC, which stands for Bayesian Inference for Default Correlations.</description>
     </item>
-    
   </channel>
 </rss>

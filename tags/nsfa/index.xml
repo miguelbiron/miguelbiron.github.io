@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>nsfa on Miguel Biron-Lattes</title>
+    <title>Nsfa on Miguel Biron-Lattes</title>
     <link>/tags/nsfa/</link>
-    <description>Recent content in nsfa on Miguel Biron-Lattes</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Nsfa on Miguel Biron-Lattes</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Dec 2018 11:00:00 -0800</lastBuildDate><atom:link href="/tags/nsfa/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 Dec 2018 11:00:00 -0800</lastBuildDate>
+    <atom:link href="/tags/nsfa/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SBGLM: Sparse Bayes Generalized Linear Models</title>
       <link>/post/2018-12-20-sbglm/</link>
       <pubDate>Thu, 20 Dec 2018 11:00:00 -0800</pubDate>
-      
       <guid>/post/2018-12-20-sbglm/</guid>
       <description>Hey! I’ve just released a package on Github called SBGLM, which stands for Sparse Bayes Generalized Linear Models.</description>
     </item>
-    
   </channel>
 </rss>

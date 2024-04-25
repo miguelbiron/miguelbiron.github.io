@@ -1,38 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>finance on Miguel Biron-Lattes</title>
+    <title>Finance on Miguel Biron-Lattes</title>
     <link>/tags/finance/</link>
-    <description>Recent content in finance on Miguel Biron-Lattes</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Finance on Miguel Biron-Lattes</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Dec 2018 19:30:11 -0800</lastBuildDate><atom:link href="/tags/finance/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Dec 2018 19:30:11 -0800</lastBuildDate>
+    <atom:link href="/tags/finance/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BIDC: Bayesian Inference for Default Correlations</title>
       <link>/post/2018-12-07-bidc-r-package/</link>
       <pubDate>Sat, 08 Dec 2018 19:30:11 -0800</pubDate>
-      
       <guid>/post/2018-12-07-bidc-r-package/</guid>
       <description>I just released a package on Github called BIDC, which stands for Bayesian Inference for Default Correlations.</description>
     </item>
-    
     <item>
       <title>Demo for simple payments with linear programming</title>
       <link>/post/2018-02-17-demo-simple-payments/</link>
       <pubDate>Sat, 17 Feb 2018 10:08:00 -0300</pubDate>
-      
       <guid>/post/2018-02-17-demo-simple-payments/</guid>
       <description>I built a webapp that implements the solution for simplifying payments described in my previous post.</description>
     </item>
-    
     <item>
       <title>Simplifying payments with linear programming</title>
       <link>/post/2018-02-09-simplifying-pmts-with-lp/</link>
       <pubDate>Fri, 09 Feb 2018 17:40:00 -0300</pubDate>
-      
       <guid>/post/2018-02-09-simplifying-pmts-with-lp/</guid>
       <description>Update: I have built a demo webapp implementing the solution presented here.</description>
     </item>
-    
   </channel>
 </rss>

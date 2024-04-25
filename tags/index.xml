@@ -4,170 +4,135 @@
     <title>Tags on Miguel Biron-Lattes</title>
     <link>/tags/</link>
     <description>Recent content in Tags on Miguel Biron-Lattes</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Jan 2019 22:00:00 -0800</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Jan 2019 22:00:00 -0800</lastBuildDate>
+    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>bayesian</title>
+      <title>Bayesian</title>
       <link>/tags/bayesian/</link>
-      <pubDate>Sun, 06 Jan 2019 22:00:00 -0800</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/tags/bayesian/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>linear regression</title>
+      <title>Linear Regression</title>
       <link>/tags/linear-regression/</link>
-      <pubDate>Sun, 06 Jan 2019 22:00:00 -0800</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/tags/linear-regression/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>sparse</title>
+      <title>Sparse</title>
       <link>/tags/sparse/</link>
-      <pubDate>Sun, 06 Jan 2019 22:00:00 -0800</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/tags/sparse/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>factor analysis</title>
+      <title>Factor Analysis</title>
       <link>/tags/factor-analysis/</link>
-      <pubDate>Thu, 20 Dec 2018 11:00:00 -0800</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/tags/factor-analysis/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>nonparametric bayes</title>
+      <title>Nonparametric Bayes</title>
       <link>/tags/nonparametric-bayes/</link>
-      <pubDate>Thu, 20 Dec 2018 11:00:00 -0800</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/tags/nonparametric-bayes/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>nsfa</title>
+      <title>Nsfa</title>
       <link>/tags/nsfa/</link>
-      <pubDate>Thu, 20 Dec 2018 11:00:00 -0800</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/tags/nsfa/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>bbvi</title>
+      <title>Bbvi</title>
       <link>/tags/bbvi/</link>
-      <pubDate>Sun, 09 Dec 2018 19:18:00 -0800</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/tags/bbvi/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>elasticnet</title>
+      <title>Elasticnet</title>
       <link>/tags/elasticnet/</link>
-      <pubDate>Sun, 09 Dec 2018 19:18:00 -0800</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/tags/elasticnet/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>qualifying course</title>
+      <title>Qualifying Course</title>
       <link>/tags/qualifying-course/</link>
-      <pubDate>Sun, 09 Dec 2018 19:18:00 -0800</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/tags/qualifying-course/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>credit risk</title>
+      <title>Credit Risk</title>
       <link>/tags/credit-risk/</link>
-      <pubDate>Sat, 08 Dec 2018 19:30:11 -0800</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/tags/credit-risk/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>finance</title>
+      <title>Finance</title>
       <link>/tags/finance/</link>
-      <pubDate>Sat, 08 Dec 2018 19:30:11 -0800</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/tags/finance/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>gibbs sampler</title>
+      <title>Gibbs Sampler</title>
       <link>/tags/gibbs-sampler/</link>
-      <pubDate>Sat, 08 Dec 2018 19:30:11 -0800</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/tags/gibbs-sampler/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>mcmc</title>
+      <title>Mcmc</title>
       <link>/tags/mcmc/</link>
-      <pubDate>Sat, 08 Dec 2018 19:30:11 -0800</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/tags/mcmc/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>R</title>
       <link>/tags/r/</link>
-      <pubDate>Sat, 08 Dec 2018 19:30:11 -0800</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/tags/r/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>Fourier series</title>
+      <title>Fourier Series</title>
       <link>/tags/fourier-series/</link>
-      <pubDate>Fri, 09 Mar 2018 15:05:00 -0300</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/tags/fourier-series/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>visualization</title>
+      <title>Visualization</title>
       <link>/tags/visualization/</link>
-      <pubDate>Fri, 09 Mar 2018 15:05:00 -0300</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/tags/visualization/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>javascript</title>
+      <title>Javascript</title>
       <link>/tags/javascript/</link>
-      <pubDate>Sat, 17 Feb 2018 10:08:00 -0300</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/tags/javascript/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>linear programming</title>
+      <title>Linear Programming</title>
       <link>/tags/linear-programming/</link>
-      <pubDate>Sat, 17 Feb 2018 10:08:00 -0300</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/tags/linear-programming/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

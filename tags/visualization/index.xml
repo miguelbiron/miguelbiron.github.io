@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>visualization on Miguel Biron-Lattes</title>
+    <title>Visualization on Miguel Biron-Lattes</title>
     <link>/tags/visualization/</link>
-    <description>Recent content in visualization on Miguel Biron-Lattes</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Visualization on Miguel Biron-Lattes</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 Mar 2018 15:05:00 -0300</lastBuildDate><atom:link href="/tags/visualization/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 09 Mar 2018 15:05:00 -0300</lastBuildDate>
+    <atom:link href="/tags/visualization/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Visualizing Fourier series in 2D and 3D</title>
       <link>/post/2018-03-05-visualizing-fourier-series-2d-3d/</link>
       <pubDate>Fri, 09 Mar 2018 15:05:00 -0300</pubDate>
-      
       <guid>/post/2018-03-05-visualizing-fourier-series-2d-3d/</guid>
       <description>In this post, I will give a brief description of real valued Fourier series in higher dimensions, with some neat plots.</description>
     </item>
-    
   </channel>
 </rss>

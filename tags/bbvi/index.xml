@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>bbvi on Miguel Biron-Lattes</title>
+    <title>Bbvi on Miguel Biron-Lattes</title>
     <link>/tags/bbvi/</link>
-    <description>Recent content in bbvi on Miguel Biron-Lattes</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Bbvi on Miguel Biron-Lattes</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Dec 2018 19:18:00 -0800</lastBuildDate><atom:link href="/tags/bbvi/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Dec 2018 19:18:00 -0800</lastBuildDate>
+    <atom:link href="/tags/bbvi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PhD Qualifying Course Reports: Term 1</title>
       <link>/post/2018-12-08-qualifying-course-reports-term-1/</link>
       <pubDate>Sun, 09 Dec 2018 19:18:00 -0800</pubDate>
-      
       <guid>/post/2018-12-08-qualifying-course-reports-term-1/</guid>
       <description>It’s crazy how fast this first term went by! But I loved it.</description>
     </item>
-    
   </channel>
 </rss>
