@@ -13,14 +13,14 @@
       <link>/post/2018-02-17-demo-simple-payments/</link>
       <pubDate>Sat, 17 Feb 2018 10:08:00 -0300</pubDate>
       <guid>/post/2018-02-17-demo-simple-payments/</guid>
-      <description>I built a webapp that implements the solution for simplifying payments described in my previous post.</description>
+      <description>&lt;p&gt;I built a webapp that implements the solution for simplifying payments described &lt;a href=&#34;/post/2018-02-09-simplifying-pmts-with-lp/&#34;&gt;in my previous post&lt;/a&gt;. It is written in Javascript and uses the &lt;a href=&#34;http://mlweb.loria.fr/lalolab/lalolib.html&#34;&gt;&lt;code&gt;LALOLib&lt;/code&gt;&lt;/a&gt; library for linear algebra and solving the linear program.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Simplifying payments with linear programming</title>
       <link>/post/2018-02-09-simplifying-pmts-with-lp/</link>
       <pubDate>Fri, 09 Feb 2018 17:40:00 -0300</pubDate>
       <guid>/post/2018-02-09-simplifying-pmts-with-lp/</guid>
-      <description>Update: I have built a demo webapp implementing the solution presented here.</description>
+      <description>&lt;p&gt;&lt;em&gt;Update: I have built &lt;a href=&#34;/post/2018-02-17-demo-simple-payments/&#34;&gt;a demo webapp&lt;/a&gt; implementing the solution presented here. You should try it!&lt;/em&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

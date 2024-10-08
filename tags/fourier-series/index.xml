@@ -13,7 +13,7 @@
       <link>/post/2018-03-05-visualizing-fourier-series-2d-3d/</link>
       <pubDate>Fri, 09 Mar 2018 15:05:00 -0300</pubDate>
       <guid>/post/2018-03-05-visualizing-fourier-series-2d-3d/</guid>
-      <description>In this post, I will give a brief description of real valued Fourier series in higher dimensions, with some neat plots.</description>
+      <description>&lt;p&gt;In this post, I will give a brief description of real valued Fourier series in higher dimensions, with some neat plots. I started reading about Fourier series because in the 1D case they are useful for extracting periodic patterns from time series data. However, I ended up fascinated by the pretty pictures one could get by plotting random 2D series, or by the periodic videos made by “walking” along a 3D space “painted”&amp;quot; with a Fourier series.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

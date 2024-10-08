@@ -13,7 +13,7 @@
       <link>/post/2018-12-20-sbglm/</link>
       <pubDate>Thu, 20 Dec 2018 11:00:00 -0800</pubDate>
       <guid>/post/2018-12-20-sbglm/</guid>
-      <description>Hey! I’ve just released a package on Github called SBGLM, which stands for Sparse Bayes Generalized Linear Models.</description>
+      <description>&lt;p&gt;Hey! I’ve just released a &lt;a href=&#34;https://github.com/miguelbiron/SBGLM&#34;&gt;package on Github called SBGLM&lt;/a&gt;, which stands for &lt;strong&gt;S&lt;/strong&gt;parse &lt;strong&gt;B&lt;/strong&gt;ayes &lt;strong&gt;G&lt;/strong&gt;eneralized &lt;strong&gt;L&lt;/strong&gt;inear &lt;strong&gt;M&lt;/strong&gt;odels. The purpose of this package is mainly a way to store a lot of code that I have rotting in my laptop, which I think is relevant and useful. The models will follow the Bayesian tradition of the “spike-and-slab” prior for sparsity &lt;span class=&#34;citation&#34;&gt;(Mitchell and Beauchamp 1988)&lt;/span&gt;, so do not expect to see the so called “Bayesian Lasso” here because &lt;a href=&#34;https://andrewgelman.com/2017/11/02/king-must-die/&#34;&gt;it doesn’t work&lt;/a&gt;. The idea is that, as time permits, I will be adding more models to the package.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -13,21 +13,21 @@
       <link>/post/2018-12-07-bidc-r-package/</link>
       <pubDate>Sat, 08 Dec 2018 19:30:11 -0800</pubDate>
       <guid>/post/2018-12-07-bidc-r-package/</guid>
-      <description>I just released a package on Github called BIDC, which stands for Bayesian Inference for Default Correlations.</description>
+      <description>&lt;p&gt;I just released &lt;a href=&#34;https://github.com/miguelbiron/BIDC&#34;&gt;a package on Github called BIDC&lt;/a&gt;, which stands for &lt;strong&gt;B&lt;/strong&gt;ayesian &lt;strong&gt;I&lt;/strong&gt;nference for &lt;strong&gt;D&lt;/strong&gt;efault &lt;strong&gt;C&lt;/strong&gt;orrelations. I started working on this together with my colleague Victor Medina back when I was a financial stability analyst at the Superintendency of Banks and Financial Institutions in Chile. In fact, you can see the slides from our presentation at the 2017 version of SBIF conference &lt;a href=&#34;https://www.sbif.cl/sbifweb/servlet/ConozcaSBIF?indice=C.D.A&amp;amp;idContenido=16698&#34;&gt;here&lt;/a&gt; &lt;span class=&#34;citation&#34;&gt;(Biron and Medina 2017)&lt;/span&gt;. The difference is that, instead of Stan, the method available in BIDC uses a Metropolis-Hastings-within-Gibbs MCMC sampler &lt;span class=&#34;citation&#34;&gt;(Gilks 1996)&lt;/span&gt; written entirely in base R, that runs much faster. Currently, it only supports the naive version shown on those slides.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Demo for simple payments with linear programming</title>
       <link>/post/2018-02-17-demo-simple-payments/</link>
       <pubDate>Sat, 17 Feb 2018 10:08:00 -0300</pubDate>
       <guid>/post/2018-02-17-demo-simple-payments/</guid>
-      <description>I built a webapp that implements the solution for simplifying payments described in my previous post.</description>
+      <description>&lt;p&gt;I built a webapp that implements the solution for simplifying payments described &lt;a href=&#34;/post/2018-02-09-simplifying-pmts-with-lp/&#34;&gt;in my previous post&lt;/a&gt;. It is written in Javascript and uses the &lt;a href=&#34;http://mlweb.loria.fr/lalolab/lalolib.html&#34;&gt;&lt;code&gt;LALOLib&lt;/code&gt;&lt;/a&gt; library for linear algebra and solving the linear program.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Simplifying payments with linear programming</title>
       <link>/post/2018-02-09-simplifying-pmts-with-lp/</link>
       <pubDate>Fri, 09 Feb 2018 17:40:00 -0300</pubDate>
       <guid>/post/2018-02-09-simplifying-pmts-with-lp/</guid>
-      <description>Update: I have built a demo webapp implementing the solution presented here.</description>
+      <description>&lt;p&gt;&lt;em&gt;Update: I have built &lt;a href=&#34;/post/2018-02-17-demo-simple-payments/&#34;&gt;a demo webapp&lt;/a&gt; implementing the solution presented here. You should try it!&lt;/em&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -13,7 +13,7 @@
       <link>/post/2019-01-06-new-sblm-in-sbglm/</link>
       <pubDate>Sun, 06 Jan 2019 22:00:00 -0800</pubDate>
       <guid>/post/2019-01-06-new-sblm-in-sbglm/</guid>
-      <description>Hi all!&#xA;This blog is about the latest addition to my package SBGLM: a sparse linear regression.</description>
+      <description>&lt;p&gt;Hi all!&lt;/p&gt;&#xA;&lt;p&gt;This blog is about the latest addition to my &lt;a href=&#34;https://github.com/miguelbiron/SBGLM&#34;&gt;package SBGLM&lt;/a&gt;: a sparse linear regression. This was actually the first model I intended to put in the package, but I didn’t had time to finish implementing it during last term.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
