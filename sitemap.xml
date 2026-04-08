@@ -2,90 +2,90 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/</loc>
+    <loc>//localhost:1313/</loc>
     <lastmod>2019-01-06T22:00:00-08:00</lastmod>
   </url><url>
-    <loc>/tags/bayesian/</loc>
+    <loc>//localhost:1313/tags/bayesian/</loc>
     <lastmod>2019-01-06T22:00:00-08:00</lastmod>
   </url><url>
-    <loc>/tags/linear-regression/</loc>
+    <loc>//localhost:1313/tags/linear-regression/</loc>
     <lastmod>2019-01-06T22:00:00-08:00</lastmod>
   </url><url>
-    <loc>/post/2019-01-06-new-sblm-in-sbglm/</loc>
+    <loc>//localhost:1313/post/2019-01-06-new-sblm-in-sbglm/</loc>
     <lastmod>2019-01-06T22:00:00-08:00</lastmod>
   </url><url>
-    <loc>/post/</loc>
+    <loc>//localhost:1313/post/</loc>
     <lastmod>2019-01-06T22:00:00-08:00</lastmod>
   </url><url>
-    <loc>/tags/sparse/</loc>
+    <loc>//localhost:1313/tags/sparse/</loc>
     <lastmod>2019-01-06T22:00:00-08:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>//localhost:1313/tags/</loc>
     <lastmod>2019-01-06T22:00:00-08:00</lastmod>
   </url><url>
-    <loc>/tags/factor-analysis/</loc>
+    <loc>//localhost:1313/tags/factor-analysis/</loc>
     <lastmod>2018-12-20T11:00:00-08:00</lastmod>
   </url><url>
-    <loc>/tags/nonparametric-bayes/</loc>
+    <loc>//localhost:1313/tags/nonparametric-bayes/</loc>
     <lastmod>2018-12-20T11:00:00-08:00</lastmod>
   </url><url>
-    <loc>/tags/nsfa/</loc>
+    <loc>//localhost:1313/tags/nsfa/</loc>
     <lastmod>2018-12-20T11:00:00-08:00</lastmod>
   </url><url>
-    <loc>/post/2018-12-20-sbglm/</loc>
+    <loc>//localhost:1313/post/2018-12-20-sbglm/</loc>
     <lastmod>2018-12-20T11:00:00-08:00</lastmod>
   </url><url>
-    <loc>/tags/bbvi/</loc>
+    <loc>//localhost:1313/tags/bbvi/</loc>
     <lastmod>2018-12-09T19:18:00-08:00</lastmod>
   </url><url>
-    <loc>/tags/elasticnet/</loc>
+    <loc>//localhost:1313/tags/elasticnet/</loc>
     <lastmod>2018-12-09T19:18:00-08:00</lastmod>
   </url><url>
-    <loc>/post/2018-12-08-qualifying-course-reports-term-1/</loc>
+    <loc>//localhost:1313/post/2018-12-08-qualifying-course-reports-term-1/</loc>
     <lastmod>2018-12-09T19:18:00-08:00</lastmod>
   </url><url>
-    <loc>/tags/qualifying-course/</loc>
+    <loc>//localhost:1313/tags/qualifying-course/</loc>
     <lastmod>2018-12-09T19:18:00-08:00</lastmod>
   </url><url>
-    <loc>/post/2018-12-07-bidc-r-package/</loc>
+    <loc>//localhost:1313/post/2018-12-07-bidc-r-package/</loc>
     <lastmod>2018-12-08T19:30:11-08:00</lastmod>
   </url><url>
-    <loc>/tags/credit-risk/</loc>
+    <loc>//localhost:1313/tags/credit-risk/</loc>
     <lastmod>2018-12-08T19:30:11-08:00</lastmod>
   </url><url>
-    <loc>/tags/finance/</loc>
+    <loc>//localhost:1313/tags/finance/</loc>
     <lastmod>2018-12-08T19:30:11-08:00</lastmod>
   </url><url>
-    <loc>/tags/gibbs-sampler/</loc>
+    <loc>//localhost:1313/tags/gibbs-sampler/</loc>
     <lastmod>2018-12-08T19:30:11-08:00</lastmod>
   </url><url>
-    <loc>/tags/mcmc/</loc>
+    <loc>//localhost:1313/tags/mcmc/</loc>
     <lastmod>2018-12-08T19:30:11-08:00</lastmod>
   </url><url>
-    <loc>/tags/r/</loc>
+    <loc>//localhost:1313/tags/r/</loc>
     <lastmod>2018-12-08T19:30:11-08:00</lastmod>
   </url><url>
-    <loc>/tags/fourier-series/</loc>
+    <loc>//localhost:1313/tags/fourier-series/</loc>
     <lastmod>2018-03-09T15:05:00-03:00</lastmod>
   </url><url>
-    <loc>/tags/visualization/</loc>
+    <loc>//localhost:1313/tags/visualization/</loc>
     <lastmod>2018-03-09T15:05:00-03:00</lastmod>
   </url><url>
-    <loc>/post/2018-03-05-visualizing-fourier-series-2d-3d/</loc>
+    <loc>//localhost:1313/post/2018-03-05-visualizing-fourier-series-2d-3d/</loc>
     <lastmod>2018-03-09T15:05:00-03:00</lastmod>
   </url><url>
-    <loc>/post/2018-02-17-demo-simple-payments/</loc>
+    <loc>//localhost:1313/post/2018-02-17-demo-simple-payments/</loc>
     <lastmod>2018-02-17T10:08:00-03:00</lastmod>
   </url><url>
-    <loc>/tags/javascript/</loc>
+    <loc>//localhost:1313/tags/javascript/</loc>
     <lastmod>2018-02-17T10:08:00-03:00</lastmod>
   </url><url>
-    <loc>/tags/linear-programming/</loc>
+    <loc>//localhost:1313/tags/linear-programming/</loc>
     <lastmod>2018-02-17T10:08:00-03:00</lastmod>
   </url><url>
-    <loc>/post/2018-02-09-simplifying-pmts-with-lp/</loc>
+    <loc>//localhost:1313/post/2018-02-09-simplifying-pmts-with-lp/</loc>
     <lastmod>2018-02-09T17:40:00-03:00</lastmod>
   </url><url>
-    <loc>/archives/</loc>
+    <loc>//localhost:1313/archives/</loc>
   </url>
 </urlset>
