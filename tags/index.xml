@@ -2,136 +2,136 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Miguel Biron-Lattes</title>
-    <link>//localhost:1313/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Miguel Biron-Lattes</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 06 Jan 2019 22:00:00 -0800</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bayesian</title>
-      <link>//localhost:1313/tags/bayesian/</link>
+      <link>/tags/bayesian/</link>
       <pubDate>Sun, 06 Jan 2019 22:00:00 -0800</pubDate>
-      <guid>//localhost:1313/tags/bayesian/</guid>
+      <guid>/tags/bayesian/</guid>
       <description></description>
     </item>
     <item>
       <title>Linear Regression</title>
-      <link>//localhost:1313/tags/linear-regression/</link>
+      <link>/tags/linear-regression/</link>
       <pubDate>Sun, 06 Jan 2019 22:00:00 -0800</pubDate>
-      <guid>//localhost:1313/tags/linear-regression/</guid>
+      <guid>/tags/linear-regression/</guid>
       <description></description>
     </item>
     <item>
       <title>Sparse</title>
-      <link>//localhost:1313/tags/sparse/</link>
+      <link>/tags/sparse/</link>
       <pubDate>Sun, 06 Jan 2019 22:00:00 -0800</pubDate>
-      <guid>//localhost:1313/tags/sparse/</guid>
+      <guid>/tags/sparse/</guid>
       <description></description>
     </item>
     <item>
       <title>Factor Analysis</title>
-      <link>//localhost:1313/tags/factor-analysis/</link>
+      <link>/tags/factor-analysis/</link>
       <pubDate>Thu, 20 Dec 2018 11:00:00 -0800</pubDate>
-      <guid>//localhost:1313/tags/factor-analysis/</guid>
+      <guid>/tags/factor-analysis/</guid>
       <description></description>
     </item>
     <item>
       <title>Nonparametric Bayes</title>
-      <link>//localhost:1313/tags/nonparametric-bayes/</link>
+      <link>/tags/nonparametric-bayes/</link>
       <pubDate>Thu, 20 Dec 2018 11:00:00 -0800</pubDate>
-      <guid>//localhost:1313/tags/nonparametric-bayes/</guid>
+      <guid>/tags/nonparametric-bayes/</guid>
       <description></description>
     </item>
     <item>
       <title>Nsfa</title>
-      <link>//localhost:1313/tags/nsfa/</link>
+      <link>/tags/nsfa/</link>
       <pubDate>Thu, 20 Dec 2018 11:00:00 -0800</pubDate>
-      <guid>//localhost:1313/tags/nsfa/</guid>
+      <guid>/tags/nsfa/</guid>
       <description></description>
     </item>
     <item>
       <title>Bbvi</title>
-      <link>//localhost:1313/tags/bbvi/</link>
+      <link>/tags/bbvi/</link>
       <pubDate>Sun, 09 Dec 2018 19:18:00 -0800</pubDate>
-      <guid>//localhost:1313/tags/bbvi/</guid>
+      <guid>/tags/bbvi/</guid>
       <description></description>
     </item>
     <item>
       <title>Elasticnet</title>
-      <link>//localhost:1313/tags/elasticnet/</link>
+      <link>/tags/elasticnet/</link>
       <pubDate>Sun, 09 Dec 2018 19:18:00 -0800</pubDate>
-      <guid>//localhost:1313/tags/elasticnet/</guid>
+      <guid>/tags/elasticnet/</guid>
       <description></description>
     </item>
     <item>
       <title>Qualifying Course</title>
-      <link>//localhost:1313/tags/qualifying-course/</link>
+      <link>/tags/qualifying-course/</link>
       <pubDate>Sun, 09 Dec 2018 19:18:00 -0800</pubDate>
-      <guid>//localhost:1313/tags/qualifying-course/</guid>
+      <guid>/tags/qualifying-course/</guid>
       <description></description>
     </item>
     <item>
       <title>Credit Risk</title>
-      <link>//localhost:1313/tags/credit-risk/</link>
+      <link>/tags/credit-risk/</link>
       <pubDate>Sat, 08 Dec 2018 19:30:11 -0800</pubDate>
-      <guid>//localhost:1313/tags/credit-risk/</guid>
+      <guid>/tags/credit-risk/</guid>
       <description></description>
     </item>
     <item>
       <title>Finance</title>
-      <link>//localhost:1313/tags/finance/</link>
+      <link>/tags/finance/</link>
       <pubDate>Sat, 08 Dec 2018 19:30:11 -0800</pubDate>
-      <guid>//localhost:1313/tags/finance/</guid>
+      <guid>/tags/finance/</guid>
       <description></description>
     </item>
     <item>
       <title>Gibbs Sampler</title>
-      <link>//localhost:1313/tags/gibbs-sampler/</link>
+      <link>/tags/gibbs-sampler/</link>
       <pubDate>Sat, 08 Dec 2018 19:30:11 -0800</pubDate>
-      <guid>//localhost:1313/tags/gibbs-sampler/</guid>
+      <guid>/tags/gibbs-sampler/</guid>
       <description></description>
     </item>
     <item>
       <title>Mcmc</title>
-      <link>//localhost:1313/tags/mcmc/</link>
+      <link>/tags/mcmc/</link>
       <pubDate>Sat, 08 Dec 2018 19:30:11 -0800</pubDate>
-      <guid>//localhost:1313/tags/mcmc/</guid>
+      <guid>/tags/mcmc/</guid>
       <description></description>
     </item>
     <item>
       <title>R</title>
-      <link>//localhost:1313/tags/r/</link>
+      <link>/tags/r/</link>
       <pubDate>Sat, 08 Dec 2018 19:30:11 -0800</pubDate>
-      <guid>//localhost:1313/tags/r/</guid>
+      <guid>/tags/r/</guid>
       <description></description>
     </item>
     <item>
       <title>Fourier Series</title>
-      <link>//localhost:1313/tags/fourier-series/</link>
+      <link>/tags/fourier-series/</link>
       <pubDate>Fri, 09 Mar 2018 15:05:00 -0300</pubDate>
-      <guid>//localhost:1313/tags/fourier-series/</guid>
+      <guid>/tags/fourier-series/</guid>
       <description></description>
     </item>
     <item>
       <title>Visualization</title>
-      <link>//localhost:1313/tags/visualization/</link>
+      <link>/tags/visualization/</link>
       <pubDate>Fri, 09 Mar 2018 15:05:00 -0300</pubDate>
-      <guid>//localhost:1313/tags/visualization/</guid>
+      <guid>/tags/visualization/</guid>
       <description></description>
     </item>
     <item>
       <title>Javascript</title>
-      <link>//localhost:1313/tags/javascript/</link>
+      <link>/tags/javascript/</link>
       <pubDate>Sat, 17 Feb 2018 10:08:00 -0300</pubDate>
-      <guid>//localhost:1313/tags/javascript/</guid>
+      <guid>/tags/javascript/</guid>
       <description></description>
     </item>
     <item>
       <title>Linear Programming</title>
-      <link>//localhost:1313/tags/linear-programming/</link>
+      <link>/tags/linear-programming/</link>
       <pubDate>Sat, 17 Feb 2018 10:08:00 -0300</pubDate>
-      <guid>//localhost:1313/tags/linear-programming/</guid>
+      <guid>/tags/linear-programming/</guid>
       <description></description>
     </item>
   </channel>
